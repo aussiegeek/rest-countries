@@ -6,9 +6,7 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [master]
-  pull_request:
-    branches: [master]
+    branches: ["*"]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -21,6 +19,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v1.4.2
@@ -53,3 +53,9 @@ jobs:
 
       - name: Tests
         run: yarn test
+
+      - name: Chroma
+        uses: chromaui/action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
