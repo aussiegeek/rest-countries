@@ -16,7 +16,8 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.0",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "use-http": "^1.0.9"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,7 +31,6 @@
     "prettier:fix": "prettier --write .",
     "lint": "yarn eslint --ext ts --ext tsx .",
     "lint:fix": "yarn eslint --ext ts --ext tsx --fix .",
-    "build-storybook": "build-storybook -s public",
     "chromatic": "chromatic"
   },
   "eslintConfig": {
