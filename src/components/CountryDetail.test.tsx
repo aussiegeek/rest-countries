@@ -23,7 +23,7 @@ test("it includes the population", () => {
 test("snapshot", () => {
   const component = renderer.create(MiniDetail);
 
-  let tree = component.toJSON();
+  const tree = component.toJSON();
   expect(tree).toMatchInlineSnapshot(`
     <div>
       <img

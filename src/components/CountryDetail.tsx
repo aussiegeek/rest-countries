@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import styled from "styled-components/macro";
 import { Heading1 } from "./Headings";
 import { Country } from "../types";
@@ -28,24 +28,30 @@ const InlineDefinitionList = styled.dl`
 
 type CountryDetailProps = Country;
 
-export default function CountryDetail(props: CountryDetailProps) {
+export default function CountryDetail({
+  flag,
+  name,
+  population,
+  region,
+  capital,
+}: CountryDetailProps): ReactElement {
   return (
     <div>
-      <Flag src={props.flag} />
-      <Heading1>{props.name}</Heading1>
+      <Flag src={flag} />
+      <Heading1>{name}</Heading1>
 
       <InlineDefinitionList>
         <div>
           <dt>Population</dt>
-          <dd>{props.population}</dd>
+          <dd>{population}</dd>
         </div>
         <div>
           <dt>Region</dt>
-          <dd>{props.region}</dd>
+          <dd>{region}</dd>
         </div>
         <div>
           <dt>Capital</dt>
-          <dd>{props.capital}</dd>
+          <dd>{capital}</dd>
         </div>
       </InlineDefinitionList>
     </div>

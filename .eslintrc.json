@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:eslint-comments/recommended",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
+    "plugin:jest-formatting/recommended",
+    "plugin:testing-library/react",
+    "plugin:promise/recommended",
+    "prettier",
+    "prettier/react",
+    "prettier/@typescript-eslint"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    // actual types work better that prop types
+    "react/prop-types": "off",
+    // using types to guard against passing too many props
+    "react/jsx-props-no-spreading": "off"
+  },
+  "overrides": [
+    {
+      "files": "src/stories/*.tsx",
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": "off"
+      }
+    }
+  ]
+}

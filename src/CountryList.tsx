@@ -5,11 +5,13 @@ import CountryDetail from "./components/CountryDetail";
 interface CountryListProps {
   countries: Country[];
 }
-const CountryList: React.FunctionComponent<CountryListProps> = (props) => {
+const CountryList: React.FunctionComponent<CountryListProps> = ({
+  countries,
+}) => {
   return (
     <div>
-      {props.countries.map((country) => (
-        <CountryDetail {...country} />
+      {countries.map((country) => (
+        <CountryDetail key={country.name} {...country} />
       ))}
     </div>
   );
