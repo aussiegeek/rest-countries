@@ -3,6 +3,7 @@ import { render } from "@testing-library/react";
 import useFetch from "use-http";
 import FetchCountries from "./FetchCountries";
 import { Country } from "../types";
+
 jest.mock("use-http");
 
 type useFetchResult = {
@@ -17,7 +18,7 @@ test("it shows passes on the fetched data", () => {
     loading: false,
     response: { data: [] },
   });
-  const spy = jest.fn((countries: Country[]): ReactElement => <span />);
+  const spy = jest.fn((): ReactElement => <span />);
   render(<FetchCountries render={spy} />);
   expect(spy).toHaveBeenCalledWith([]);
 });

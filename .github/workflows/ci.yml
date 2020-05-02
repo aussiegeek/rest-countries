@@ -45,9 +45,6 @@ jobs:
       - name: TypeScript
         run: yarn typescript:check
 
-      - name: Prettier
-        run: yarn prettier:check
-
       - name: ESLint
         run: yarn lint
 

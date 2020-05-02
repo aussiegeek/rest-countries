@@ -1,12 +1,14 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import FetchCountries from "./components/FetchCountries";
 import CountryList from "./CountryList";
 
-function App() {
+function App(): ReactElement {
   return (
     <div className="App">
       <FetchCountries
-        render={(countries) => <CountryList countries={countries} />}
+        render={(countries): ReactElement => (
+          <CountryList countries={countries} />
+        )}
       />
     </div>
   );
