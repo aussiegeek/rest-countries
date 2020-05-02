@@ -1,0 +1,18 @@
+import React, { ReactElement } from "react";
+import { Router } from "@reach/router";
+import Home from "./Home";
+import Country from "./Country";
+import FetchCountries from "../components/FetchCountries";
+
+export default function Routes(): ReactElement {
+  return (
+    <FetchCountries
+      render={(countries): ReactElement => (
+        <Router>
+          <Home path="/" countries={countries} />
+          <Country path="/countries/:code" countries={countries} />
+        </Router>
+      )}
+    />
+  );
+}

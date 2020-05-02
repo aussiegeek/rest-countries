@@ -1,4 +1,5 @@
 import React from "react";
+import { UnstyledLink } from "./components/Link";
 import { Country } from "./types";
 import CountryDetail from "./components/CountryDetail";
 
@@ -11,7 +12,12 @@ const CountryList: React.FunctionComponent<CountryListProps> = ({
   return (
     <div>
       {countries.map((country) => (
-        <CountryDetail key={country.name} {...country} />
+        <UnstyledLink
+          key={country.alpha2Code}
+          to={`/countries/${country.alpha2Code}`}
+        >
+          <CountryDetail compact {...country} />
+        </UnstyledLink>
       ))}
     </div>
   );

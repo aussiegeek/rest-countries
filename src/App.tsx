@@ -1,15 +1,12 @@
 import React, { ReactElement } from "react";
-import FetchCountries from "./components/FetchCountries";
-import CountryList from "./CountryList";
+import Routes from "./routes/Routes";
+import GlobalStyle from "./GlobalStyle";
 
 function App(): ReactElement {
   return (
     <div className="App">
-      <FetchCountries
-        render={(countries): ReactElement => (
-          <CountryList countries={countries} />
-        )}
-      />
+      <GlobalStyle />
+      <Routes />
     </div>
   );
 }
