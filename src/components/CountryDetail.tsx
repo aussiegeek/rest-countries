@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { Heading1 } from "./Headings";
+import { Country } from "../types";
 
 const Flag = styled.img``;
 const InlineDefinitionList = styled.dl`
@@ -25,19 +26,13 @@ const InlineDefinitionList = styled.dl`
   }
 `;
 
-interface CountryDetailProps {
-  flagUrl: string;
-  countryName: string;
-  population: number;
-  region: string;
-  capital: string;
-}
+type CountryDetailProps = Country;
 
 export default function CountryDetail(props: CountryDetailProps) {
   return (
     <div>
-      <Flag src={props.flagUrl} />
-      <Heading1>{props.countryName}</Heading1>
+      <Flag src={props.flag} />
+      <Heading1>{props.name}</Heading1>
 
       <InlineDefinitionList>
         <div>

@@ -4,8 +4,8 @@ import CountryDetail from "../components/CountryDetail";
 export const CountryDetailStory = () => (
   <div>
     <CountryDetail
-      flagUrl="https://restcountries.eu/data/bel.svg"
-      countryName="Belgium"
+      flag="https://restcountries.eu/data/bel.svg"
+      name="Belgium"
       population={11319511}
       region="Europe"
       capital="Brussels"
