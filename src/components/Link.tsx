@@ -7,11 +7,12 @@ export const UnstyledLink = styled(Link)`
 `;
 
 export const ButtonLink = styled(Link)`
+  background: ${(props): string => props.theme.element.background};
   text-decoration: none;
   color: black;
-  outline: 1px solid #ddd;
   min-width: 100px;
   display: inline-block;
   text-align: center;
   margin: 20px 0;
+  box-shadow: 0 0 5px 5px hsl(0, 0%, 93%);
 `;

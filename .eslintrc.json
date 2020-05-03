@@ -1,8 +1,9 @@
 {
   "extends": [
     "airbnb-typescript",
-    "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:eslint-comments/recommended",
     "plugin:jest/recommended",
     "plugin:jest/style",
@@ -24,7 +25,7 @@
   },
   "overrides": [
     {
-      "files": "src/stories/*.tsx",
+      "files": "src/**/*.stories.tsx",
       "rules": {
         "@typescript-eslint/explicit-function-return-type": "off"
       }
