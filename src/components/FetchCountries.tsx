@@ -8,7 +8,7 @@ interface FetchCountriesProps {
 
 const FetchCountries: React.FC<FetchCountriesProps> = (props) => {
   const { response, loading, error } = useFetch<Country[]>(
-    "https://restcountries.eu/rest/v2/all?fields=name;region;population;flag;capital",
+    "https://restcountries.eu/rest/v2/all?fields=name;region;population;flag;capital;currencies;languages;alpha2Code;nativeName;topLevelDomain",
     []
   );
   if (loading) {
