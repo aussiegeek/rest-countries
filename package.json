@@ -55,6 +55,8 @@
     "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18",
     "@types/react-test-renderer": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
     "babel-plugin-macros": "^2.8.0",
     "chromatic": "^4.0.2",
     "eslint": "^6.8.0",

@@ -1,9 +1,14 @@
 import React from "react";
 import { addDecorator } from "@storybook/react";
+import { ThemeProvider } from "styled-components";
 import GlobalStyle from "../src/GlobalStyle";
+import { LightTheme } from "../src/theme";
+
 addDecorator((storyFn) => (
-  <div>
-    <GlobalStyle />
-    {storyFn()}
-  </div>
+  <ThemeProvider theme={LightTheme}>
+    <div>
+      <GlobalStyle />
+      {storyFn()}
+    </div>
+  </ThemeProvider>
 ));

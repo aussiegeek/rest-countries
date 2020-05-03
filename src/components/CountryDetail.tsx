@@ -4,6 +4,17 @@ import styled from "styled-components/macro";
 import { Heading1 } from "./Headings";
 import { Currency, Language } from "../types";
 
+const CountryDetailDiv = styled.div<{ compact: boolean }>`
+  background: ${(props): string =>
+    props.compact ? props.theme.element.background : props.theme.background};
+  border-radius: ${(props): string => (props.compact ? "10px" : "auto")};
+  overflow: hidden;
+`;
+
+const TextContainer = styled.div<{ compact: boolean }>`
+  padding: ${(props): string => (props.compact ? "20px" : "0")};
+`;
+
 const Flag = styled.img`
   max-width: 100%;
 `;
@@ -87,31 +98,33 @@ function extraDetails(props: CountryDetailProps): ReactElement | null {
   );
 }
 export default function CountryDetail(props: CountryDetailProps): ReactElement {
-  const { flag, name, population, region, capital } = props;
+  const { flag, name, population, region, capital, compact } = props;
   return (
-    <div>
+    <CountryDetailDiv compact={compact}>
       <Flag src={flag} />
-      <Heading1>{name}</Heading1>
 
-      <InlineDefinitionList>
-        {nativeName(props)}
-        <div>
-          <dt>Population</dt>
-          <dd>{population}</dd>
-        </div>
-        <div>
-          <dt>Region</dt>
-          <dd>{region}</dd>
-        </div>
-        {subregion(props)}
-        <div>
-          <dt>Capital</dt>
-          <dd>{capital}</dd>
-        </div>
-      </InlineDefinitionList>
+      <TextContainer compact={compact}>
+        <Heading1>{name}</Heading1>
+        <InlineDefinitionList>
+          {nativeName(props)}
+          <div>
+            <dt>Population</dt>
+            <dd>{population}</dd>
+          </div>
+          <div>
+            <dt>Region</dt>
+            <dd>{region}</dd>
+          </div>
+          {subregion(props)}
+          <div>
+            <dt>Capital</dt>
+            <dd>{capital}</dd>
+          </div>
+        </InlineDefinitionList>
 
-      {extraDetails(props)}
-    </div>
+        {extraDetails(props)}
+      </TextContainer>
+    </CountryDetailDiv>
   );
 }
 /* eslint-enable react/destructuring-assignment */
