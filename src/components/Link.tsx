@@ -9,10 +9,10 @@ export const UnstyledLink = styled(Link)`
 export const ButtonLink = styled(Link)`
   background: ${(props): string => props.theme.element.background};
   text-decoration: none;
-  color: black;
+  color: ${(props): string => props.theme.text};
   min-width: 100px;
   display: inline-block;
   text-align: center;
   margin: 20px 0;
-  box-shadow: 0 0 5px 5px hsl(0, 0%, 93%);
+  box-shadow: ${(props): string => props.theme.element.shadow};
 `;

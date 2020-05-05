@@ -1,6 +1,5 @@
 import React, { ReactElement } from "react";
-import { ThemeProvider } from "styled-components";
-import { LightTheme } from "./theme";
+import ThemeManager from "./ThemeManager";
 import Routes from "./routes/Routes";
 import GlobalStyle from "./GlobalStyle";
 import Header from "./components/Header";
@@ -8,11 +7,11 @@ import Header from "./components/Header";
 function App(): ReactElement {
   return (
     <div>
-      <ThemeProvider theme={LightTheme}>
+      <ThemeManager>
         <Header />
         <GlobalStyle />
         <Routes />
-      </ThemeProvider>
+      </ThemeManager>
     </div>
   );
 }
