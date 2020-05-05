@@ -9,6 +9,7 @@ const CountryDetailDiv = styled.div<{ compact: boolean }>`
     props.compact ? props.theme.element.background : props.theme.background};
   border-radius: ${(props): string => (props.compact ? "10px" : "auto")};
   overflow: hidden;
+  color: ${(props): string => props.theme.text};
 `;
 
 const TextContainer = styled.div<{ compact: boolean }>`
