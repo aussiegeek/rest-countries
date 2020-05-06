@@ -30,5 +30,4 @@ export const detailed = () => (
 
 export default {
   title: "CountryDetail",
-  component: CountryDetail,
 };
