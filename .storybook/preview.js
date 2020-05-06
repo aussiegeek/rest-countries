@@ -1,16 +1,15 @@
 import React from "react";
 import { addDecorator, addParameters } from "@storybook/react";
-import { ThemeProvider } from "styled-components";
 import GlobalStyle from "../src/GlobalStyle";
-import { LightTheme } from "../src/theme";
+import ThemeManager from "../src/ThemeManager";
 
 addDecorator((storyFn) => (
-  <ThemeProvider theme={LightTheme}>
+  <ThemeManager>
     <div>
       <GlobalStyle />
       {storyFn()}
     </div>
-  </ThemeProvider>
+  </ThemeManager>
 ));
 
 const viewports = {
