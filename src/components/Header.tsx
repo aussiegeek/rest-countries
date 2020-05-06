@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React from "react";
 import styled from "styled-components";
 import { UnstyledLink } from "./Link";
 
@@ -14,14 +14,12 @@ const SiteName = styled.div`
   color: ${(props): string => props.theme.text};
 `;
 
-export default function Header(): ReactElement {
-  return (
-    <>
-      <HeaderDiv>
-        <UnstyledLink to="/">
-          <SiteName>Where in the world?</SiteName>
-        </UnstyledLink>
-      </HeaderDiv>
-    </>
-  );
-}
+const Header: React.FC = () => (
+  <HeaderDiv>
+    <UnstyledLink to="/">
+      <SiteName>Where in the world?</SiteName>
+    </UnstyledLink>
+  </HeaderDiv>
+);
+
+export default Header;

@@ -17,9 +17,6 @@ export const LightTheme: ThemeInterface = {
   headerShadow: "0 2px 5px 0 hsla(0, 0%, 0%, 0.06)",
 };
 
-/* offset-x | offset-y | blur-radius | spread-radius | color */
-// box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-
 export const DarkTheme: ThemeInterface = {
   background: "hsl(207, 26%, 17%)",
   text: "hsl(0, 0%, 100%)",

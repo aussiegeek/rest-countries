@@ -1,5 +1,5 @@
 import React from "react";
-import CountryDetail from "../components/CountryDetail";
+import CountryDetail from "./CountryDetail";
 
 export const compact = () => (
   <CountryDetail
@@ -30,5 +30,4 @@ export const detailed = () => (
 
 export default {
   title: "CountryDetail",
-  component: CountryDetail,
 };

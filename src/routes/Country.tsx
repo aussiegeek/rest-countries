@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React from "react";
 import { RouteComponentProps } from "@reach/router";
 import styled from "styled-components";
 
@@ -13,10 +13,8 @@ interface CountryProps extends RouteComponentProps {
   countries: Country[];
   code?: string;
 }
-export default function CountryRoute({
-  countries,
-  code,
-}: CountryProps): ReactElement | null {
+
+const CountryRoute: React.FC<CountryProps> = ({ countries, code }) => {
   if (!code) return null;
 
   const country = countries.find((c) => c.alpha2Code === code.toUpperCase());
@@ -29,4 +27,6 @@ export default function CountryRoute({
       <CountryDetail compact={false} {...country} />
     </CountryContainer>
   );
-}
+};
+
+export default CountryRoute;
