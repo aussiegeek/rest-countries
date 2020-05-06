@@ -18,17 +18,12 @@ const CountryDetailContainer = styled.div`
   margin: 40px 20px;
 `;
 
-const CountryList: React.FunctionComponent<CountryListProps> = ({
-  countries,
-}) => {
+const CountryList: React.FC<CountryListProps> = ({ countries }) => {
   return (
     <CountryListContainer>
       {countries.map((country) => (
-        <CountryDetailContainer>
-          <UnstyledLink
-            key={country.alpha2Code}
-            to={`/countries/${country.alpha2Code}`}
-          >
+        <CountryDetailContainer key={country.alpha2Code}>
+          <UnstyledLink to={`/countries/${country.alpha2Code}`}>
             <CountryDetail compact {...country} />
           </UnstyledLink>
         </CountryDetailContainer>

@@ -1,5 +1,4 @@
-/* eslint-disable react/destructuring-assignment */
-import React, { ReactElement } from "react";
+import React from "react";
 import styled from "styled-components/macro";
 import { Heading1 } from "./Headings";
 import { Currency, Language } from "../types";
@@ -105,7 +104,7 @@ interface FullCountryDetails extends Omit<CompactCountryDetails, "compact"> {
 }
 type CountryDetailProps = CompactCountryDetails | FullCountryDetails;
 
-function nativeName(props: CountryDetailProps): ReactElement | null {
+const nativeName: React.FC<CountryDetailProps> = (props) => {
   if (props.compact) return null;
   return (
     <div>
@@ -113,9 +112,9 @@ function nativeName(props: CountryDetailProps): ReactElement | null {
       <dd>{props.nativeName}</dd>
     </div>
   );
-}
+};
 
-function subregion(props: CountryDetailProps): ReactElement | null {
+const subregion: React.FC<CountryDetailProps> = (props) => {
   if (props.compact) return null;
   return (
     <div>
@@ -123,8 +122,9 @@ function subregion(props: CountryDetailProps): ReactElement | null {
       <dd>{props.subregion}</dd>
     </div>
   );
-}
-function extraDetails(props: CountryDetailProps): ReactElement | null {
+};
+
+const extraDetails: React.FC<CountryDetailProps> = (props) => {
   if (props.compact) return null;
   return (
     <InlineDefinitionList>
@@ -142,9 +142,9 @@ function extraDetails(props: CountryDetailProps): ReactElement | null {
       </div>
     </InlineDefinitionList>
   );
-}
+};
 
-const ComponentContainer: React.FunctionComponent<{ compact: boolean }> = ({
+const ComponentContainer: React.FC<{ compact: boolean }> = ({
   children,
   compact,
 }) => {
@@ -155,7 +155,7 @@ const ComponentContainer: React.FunctionComponent<{ compact: boolean }> = ({
   return <FullCountryDetailDiv>{children}</FullCountryDetailDiv>;
 };
 
-export default function CountryDetail(props: CountryDetailProps): ReactElement {
+const CountryDetail: React.FC<CountryDetailProps> = (props) => {
   const { flag, name, population, region, capital, compact } = props;
   return (
     <ComponentContainer compact={compact}>
@@ -182,5 +182,6 @@ export default function CountryDetail(props: CountryDetailProps): ReactElement {
       <AdditionalDetails>{extraDetails(props)}</AdditionalDetails>
     </ComponentContainer>
   );
-}
-/* eslint-enable react/destructuring-assignment */
+};
+
+export default CountryDetail;

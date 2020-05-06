@@ -21,7 +21,9 @@
     // actual types work better that prop types
     "react/prop-types": "off",
     // using types to guard against passing too many props
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    // when using unions as props we need to see if the props are available before destructuring
+    "react/destructuring-assignment": "off"
   },
   "overrides": [
     {

@@ -1,8 +1,8 @@
-import React, { FunctionComponent, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 import { LightTheme, DarkTheme } from "./theme";
 
-const ThemeManager: FunctionComponent = ({ children }) => {
+const ThemeManager: React.FC = ({ children }) => {
   const [useDarkMode, setUseDarkMode] = useState(false);
 
   useEffect(() => {
