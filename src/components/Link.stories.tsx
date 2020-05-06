@@ -1,5 +1,5 @@
 import React from "react";
-import { UnstyledLink, ButtonLink } from "../components/Link";
+import { UnstyledLink, ButtonLink } from "./Link";
 
 export const unstyled = () => <UnstyledLink to="/">Hello World</UnstyledLink>;
 

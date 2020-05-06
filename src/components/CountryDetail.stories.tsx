@@ -1,5 +1,5 @@
 import React from "react";
-import CountryDetail from "../components/CountryDetail";
+import CountryDetail from "./CountryDetail";
 
 export const compact = () => (
   <CountryDetail
