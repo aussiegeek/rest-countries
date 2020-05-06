@@ -9,6 +9,11 @@ interface CountryListProps {
   countries: Country[];
 }
 
+const CountryListContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-auto-rows: content-min;
+`;
 const CountryDetailContainer = styled.div`
   margin: 40px 20px;
 `;
@@ -17,7 +22,7 @@ const CountryList: React.FunctionComponent<CountryListProps> = ({
   countries,
 }) => {
   return (
-    <div>
+    <CountryListContainer>
       {countries.map((country) => (
         <CountryDetailContainer>
           <UnstyledLink
@@ -28,7 +33,7 @@ const CountryList: React.FunctionComponent<CountryListProps> = ({
           </UnstyledLink>
         </CountryDetailContainer>
       ))}
-    </div>
+    </CountryListContainer>
   );
 };
 
