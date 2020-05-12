@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components/macro";
 import { LightTheme, DarkTheme } from "./theme";
 
 const ThemeManager: React.FC = ({ children }) => {

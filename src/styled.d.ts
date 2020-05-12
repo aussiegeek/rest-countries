@@ -1,4 +1,4 @@
-import {} from "styled-components";
+import {} from "styled-components/macro";
 import { ThemeInterface } from "./theme";
 
 declare module "styled-components" {

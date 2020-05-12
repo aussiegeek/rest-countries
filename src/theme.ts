@@ -12,7 +12,7 @@ export const LightTheme: ThemeInterface = {
   text: "hsl(200, 15%, 8%)",
   element: {
     background: "white",
-    shadow: "0 2px 5px 0 hsla(0, 0%, 0%, 0.29)",
+    shadow: "0 0 7px 0 hsla(0, 0%, 0%, 0.29)",
   },
   headerShadow: "0 2px 5px 0 hsla(0, 0%, 0%, 0.06)",
 };
