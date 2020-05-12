@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { Link } from "@reach/router";
 
 export const UnstyledLink = styled(Link)`
@@ -11,8 +11,9 @@ export const ButtonLink = styled(Link)`
   text-decoration: none;
   color: ${(props): string => props.theme.text};
   min-width: 100px;
+  height: 32px;
+  line-height: 32px;
   display: inline-block;
   text-align: center;
-  margin: 20px 0;
   box-shadow: ${(props): string => props.theme.element.shadow};
 `;

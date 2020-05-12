@@ -1,32 +1,13 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { Heading1 } from "./Headings";
-import { Currency, Language } from "../types";
+import { Country } from "../types";
+import InlineDefinitionList from "./InlineDefinitionList";
 
-const BaseCountryDetailDiv = styled.div`
+const CountryDetailDiv = styled.div`
+  background: ${(props): string => props.theme.background};
   display: grid;
   align-items: start;
-`;
-
-const CompactCountryDetailDiv = styled(BaseCountryDetailDiv)`
-  background: ${(props): string => props.theme.element.background};
-  border-radius: 10px;
-  max-width: 375px;
-  height: 100%;
-  overflow: hidden;
-  color: ${(props): string => props.theme.text};
-  grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: 1fr;
-  grid-row-gap: 20px;
-  grid-template-areas:
-    "flag flag flag"
-    ". country-name ."
-    ". main ."
-    ". details .";
-`;
-
-const FullCountryDetailDiv = styled(BaseCountryDetailDiv)`
-  background: ${(props): string => props.theme.background};
   grid-template-columns: 1fr;
   grid-template-areas:
     "flag"
@@ -34,13 +15,16 @@ const FullCountryDetailDiv = styled(BaseCountryDetailDiv)`
     "main"
     "details";
 
+  font-size: 14px;
+
   @media (min-width: 700px) {
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: min-content 1fr;
     grid-template-areas:
       "flag country-name ."
       "flag main details";
+    font-size: 16px;
   }
 `;
 
@@ -51,119 +35,31 @@ const Flag = styled.img`
 
 const CountryName = styled(Heading1)`
   grid-area: country-name;
-  margin-top: 40px;
+  margin-top: 39px;
+  margin-bottom: 24px;
 `;
 
 const Main = styled.div`
   grid-area: main;
+  margin-bottom: 32px;
 `;
 
 const AdditionalDetails = styled.div`
   grid-area: details;
 `;
 
-const InlineDefinitionList = styled.dl`
-  color: ${(props): string => props.theme.text};
-  margin-left: 0;
-  dt,
-  dd {
-    display: inline;
-  }
-
-  dt,
-  dt:after {
-    font-weight: 600;
-  }
-
-  dt:after {
-    content: ": ";
-  }
-
-  dd {
-    margin-left: 0;
-    font-weight: 300;
-  }
-`;
-
-interface CompactCountryDetails {
-  compact: true;
-  name: string;
-  flag: string;
-  region: string;
-  capital: string;
-  population: number;
-}
-
-interface FullCountryDetails extends Omit<CompactCountryDetails, "compact"> {
-  compact: false;
-  nativeName: string;
-  subregion: string;
-  topLevelDomain: string;
-  currencies: Currency[];
-  languages: Language[];
-}
-type CountryDetailProps = CompactCountryDetails | FullCountryDetails;
-
-const nativeName: React.FC<CountryDetailProps> = (props) => {
-  if (props.compact) return null;
+const CountryDetail: React.FC<Country> = (props) => {
+  const { flag, name, population, region, capital } = props;
   return (
-    <div>
-      <dt>Native Name</dt>
-      <dd>{props.nativeName}</dd>
-    </div>
-  );
-};
-
-const subregion: React.FC<CountryDetailProps> = (props) => {
-  if (props.compact) return null;
-  return (
-    <div>
-      <dt>Sub Region</dt>
-      <dd>{props.subregion}</dd>
-    </div>
-  );
-};
-
-const extraDetails: React.FC<CountryDetailProps> = (props) => {
-  if (props.compact) return null;
-  return (
-    <InlineDefinitionList>
-      <div>
-        <dt>Top Level Domain</dt>
-        <dd>{props.topLevelDomain}</dd>
-      </div>
-      <div>
-        <dt>Currencies</dt>
-        <dd>{props.currencies.map((currency) => currency.name).join(", ")}</dd>
-      </div>
-      <div>
-        <dt>Languages</dt>
-        <dd>{props.languages.map((language) => language.name).join(", ")}</dd>
-      </div>
-    </InlineDefinitionList>
-  );
-};
-
-const ComponentContainer: React.FC<{ compact: boolean }> = ({
-  children,
-  compact,
-}) => {
-  if (compact) {
-    return <CompactCountryDetailDiv>{children}</CompactCountryDetailDiv>;
-  }
-
-  return <FullCountryDetailDiv>{children}</FullCountryDetailDiv>;
-};
-
-const CountryDetail: React.FC<CountryDetailProps> = (props) => {
-  const { flag, name, population, region, capital, compact } = props;
-  return (
-    <ComponentContainer compact={compact}>
+    <CountryDetailDiv>
       <Flag src={flag} />
       <CountryName>{name}</CountryName>
       <Main>
         <InlineDefinitionList>
-          {nativeName(props)}
+          <div>
+            <dt>Native Name</dt>
+            <dd>{props.nativeName}</dd>
+          </div>
           <div>
             <dt>Population</dt>
             <dd>{population}</dd>
@@ -172,15 +68,37 @@ const CountryDetail: React.FC<CountryDetailProps> = (props) => {
             <dt>Region</dt>
             <dd>{region}</dd>
           </div>
-          {subregion(props)}
+          <div>
+            <dt>Sub Region</dt>
+            <dd>{props.subregion}</dd>
+          </div>
           <div>
             <dt>Capital</dt>
             <dd>{capital}</dd>
           </div>
         </InlineDefinitionList>
       </Main>
-      <AdditionalDetails>{extraDetails(props)}</AdditionalDetails>
-    </ComponentContainer>
+      <AdditionalDetails>
+        <InlineDefinitionList>
+          <div>
+            <dt>Top Level Domain</dt>
+            <dd>{props.topLevelDomain}</dd>
+          </div>
+          <div>
+            <dt>Currencies</dt>
+            <dd>
+              {props.currencies.map((currency) => currency.name).join(", ")}
+            </dd>
+          </div>
+          <div>
+            <dt>Languages</dt>
+            <dd>
+              {props.languages.map((language) => language.name).join(", ")}
+            </dd>
+          </div>
+        </InlineDefinitionList>
+      </AdditionalDetails>
+    </CountryDetailDiv>
   );
 };
 

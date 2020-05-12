@@ -23,7 +23,21 @@
     // using types to guard against passing too many props
     "react/jsx-props-no-spreading": "off",
     // when using unions as props we need to see if the props are available before destructuring
-    "react/destructuring-assignment": "off"
+    "react/destructuring-assignment": "off",
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": [
+          {
+            "name": "styled-components",
+            "message": "Please import from styled-components/macro."
+          }
+        ],
+        "patterns": [
+          "!styled-components/macro"
+        ]
+      }
+    ]
   },
   "overrides": [
     {

@@ -2,3 +2,4 @@ build
 src/serviceWorker.ts
 coverage
 storybook-static
+babel-plugin-macros.config.js

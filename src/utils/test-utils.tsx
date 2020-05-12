@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import { render, RenderOptions } from "@testing-library/react";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components/macro";
 import { LightTheme } from "../theme";
 
 const AllTheProviders: React.ComponentType = ({ children }) => {

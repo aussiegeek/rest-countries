@@ -1,18 +1,24 @@
 import React from "react";
 import { RouteComponentProps } from "@reach/router";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
-import { Country } from "../types";
+import { Country as CountryInterface } from "../types";
 import CountryDetail from "../components/CountryDetail";
 import { ButtonLink } from "../components/Link";
 
-const CountryContainer = styled.div`
-  padding: 10px;
-`;
+const CountryContainer = styled.div``;
 interface CountryProps extends RouteComponentProps {
-  countries: Country[];
+  countries: CountryInterface[];
   code?: string;
 }
+
+const BackButton = styled(ButtonLink)`
+  margin-bottom: 64px;
+
+  @media (min-width: 700px) {
+    margin-bottom: 80px;
+  }
+`;
 
 const CountryRoute: React.FC<CountryProps> = ({ countries, code }) => {
   if (!code) return null;
@@ -23,8 +29,8 @@ const CountryRoute: React.FC<CountryProps> = ({ countries, code }) => {
   }
   return (
     <CountryContainer>
-      <ButtonLink to="/">Back</ButtonLink>
-      <CountryDetail compact={false} {...country} />
+      <BackButton to="/">Back</BackButton>
+      <CountryDetail {...country} />
     </CountryContainer>
   );
 };
