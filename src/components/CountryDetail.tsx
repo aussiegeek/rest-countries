@@ -56,17 +56,21 @@ const BorderCountries = styled.div`
   grid-area: border;
   display: flex;
   flex-direction: column;
-  gap: 16px;
 
   ${Heading3} {
     white-space: nowrap;
+    margin-bottom: 16px;
+
+    @media (min-width: 700px) {
+      margin-bottom: 0;
+      margin-right: 11px;
+    }
   }
 
   @media (min-width: 700px) {
     margin-top: 0;
     flex-direction: row;
     align-items: center;
-    gap: 11px;
   }
 `;
 
