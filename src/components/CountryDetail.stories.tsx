@@ -10,10 +10,16 @@ export const Default = () => (
     region="Europe"
     subregion="Western Europe"
     capital="Brussels"
-    topLevelDomain=".be"
-    currencies={[{ name: "Euro" }]}
-    languages={[{ name: "Dutch" }, { name: "French" }, { name: "German" }]}
-    alpha2Code="be"
+    topLevelDomain={[".be"]}
+    currencies={["Euro"]}
+    languages={["Dutch", "French", "German"]}
+    alpha3Code="bel"
+    borders={[
+      { name: "France", alpha3Code: "France" },
+      { name: "Germany", alpha3Code: "DEU" },
+      { name: "Luxembourg", alpha3Code: "LUX" },
+      { name: "Netherlands", alpha3Code: "NLD" },
+    ]}
   />
 );
 

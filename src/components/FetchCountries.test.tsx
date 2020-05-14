@@ -2,25 +2,87 @@ import React, { ReactElement } from "react";
 import { render } from "@testing-library/react";
 import useFetch from "use-http";
 import FetchCountries from "./FetchCountries";
-import { Country } from "../types";
+import { RawCountry, CountryRecord } from "../types";
 
 jest.mock("use-http");
 
 type useFetchResult = {
   loading: boolean;
-  response: { data: Country[] };
+  response: { data: RawCountry[] };
   error?: { message: string };
 };
 const mockedUseFetch = (useFetch as unknown) as jest.Mock<useFetchResult>;
 
-test("it shows passes on the fetched data", () => {
+const demoCountries: RawCountry[] = [
+  {
+    currencies: [{ name: "Chilean peso" }],
+    languages: [{ name: "Spanish" }],
+    flag: "https://restcountries.eu/data/chl.svg",
+    name: "Chile",
+    alpha3Code: "CHL",
+    capital: "Santiago",
+    region: "Americas",
+    population: 18191900,
+    borders: ["NZL"],
+    nativeName: "Chile",
+    subregion: "South America",
+    topLevelDomain: [".cl"],
+  },
+  {
+    currencies: [{ name: "New Zealand dollar" }],
+    languages: [{ name: "English" }, { name: "Māori" }],
+    flag: "https://restcountries.eu/data/nzl.svg",
+    name: "New Zealand",
+    topLevelDomain: [".nz"],
+    alpha3Code: "NZL",
+    capital: "Wellington",
+    region: "Oceania",
+    subregion: "Australia and New Zealand",
+    population: 4697854,
+    borders: ["CHL"],
+    nativeName: "New Zealand",
+  },
+];
+
+test("it translates the country data", () => {
   mockedUseFetch.mockReturnValue({
     loading: false,
-    response: { data: [] },
+    response: { data: demoCountries },
   });
   const spy = jest.fn((): ReactElement => <span />);
   render(<FetchCountries render={spy} />);
-  expect(spy).toHaveBeenCalledWith([]);
+
+  const expectedCountries: CountryRecord = {
+    CHL: {
+      currencies: ["Chilean peso"],
+      languages: ["Spanish"],
+      flag: "https://restcountries.eu/data/chl.svg",
+      name: "Chile",
+      alpha3Code: "CHL",
+      capital: "Santiago",
+      region: "Americas",
+      population: 18191900,
+      borders: [{ name: "New Zealand", alpha3Code: "NZL" }],
+      nativeName: "Chile",
+      subregion: "South America",
+      topLevelDomain: [".cl"],
+    },
+    NZL: {
+      currencies: ["New Zealand dollar"],
+      languages: ["English", "Māori"],
+      flag: "https://restcountries.eu/data/nzl.svg",
+      name: "New Zealand",
+      topLevelDomain: [".nz"],
+      alpha3Code: "NZL",
+      capital: "Wellington",
+      region: "Oceania",
+      subregion: "Australia and New Zealand",
+      population: 4697854,
+      borders: [{ name: "Chile", alpha3Code: "CHL" }],
+      nativeName: "New Zealand",
+    },
+  };
+  expect(spy).toHaveBeenCalledWith(expectedCountries);
 });
 
 test("it shows the loading state", () => {

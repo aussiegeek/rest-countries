@@ -16,4 +16,5 @@ export const ButtonLink = styled(Link)`
   display: inline-block;
   text-align: center;
   box-shadow: ${(props): string => props.theme.element.shadow};
+  padding: 0 10px;
 `;
