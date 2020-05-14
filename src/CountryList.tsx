@@ -25,8 +25,8 @@ const CountryList: React.FC<CountryListProps> = ({ countries }) => {
   return (
     <CountryListContainer>
       {countries.map((country) => (
-        <CountryDetailContainer key={country.alpha2Code}>
-          <UnstyledLink to={`/countries/${country.alpha2Code}`}>
+        <CountryDetailContainer key={country.alpha3Code}>
+          <UnstyledLink to={`/countries/${country.alpha3Code}`}>
             <Country {...country} />
           </UnstyledLink>
         </CountryDetailContainer>

@@ -17,3 +17,10 @@ export const Heading2 = styled.h2`
   margin: 0;
   color: ${(props): string => props.theme.text};
 `;
+
+export const Heading3 = styled.h3`
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: ${(props): string => props.theme.text};
+`;

@@ -2,13 +2,13 @@ import React from "react";
 import { RouteComponentProps } from "@reach/router";
 import styled from "styled-components/macro";
 
-import { Country as CountryInterface } from "../types";
+import { CountryRecord } from "../types";
 import CountryDetail from "../components/CountryDetail";
 import { ButtonLink } from "../components/Link";
 
 const CountryContainer = styled.div``;
 interface CountryProps extends RouteComponentProps {
-  countries: CountryInterface[];
+  countries: CountryRecord;
   code?: string;
 }
 
@@ -23,7 +23,7 @@ const BackButton = styled(ButtonLink)`
 const CountryRoute: React.FC<CountryProps> = ({ countries, code }) => {
   if (!code) return null;
 
-  const country = countries.find((c) => c.alpha2Code === code.toUpperCase());
+  const country = countries[code];
   if (!country) {
     return <span>country not found</span>;
   }

@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Heading1 } from "./Headings";
+import { Heading1, Heading3 } from "./Headings";
 import { Country } from "../types";
 import InlineDefinitionList from "./InlineDefinitionList";
+import { ButtonLink } from "./Link";
 
 const CountryDetailDiv = styled.div`
   background: ${(props): string => props.theme.background};
@@ -13,7 +14,8 @@ const CountryDetailDiv = styled.div`
     "flag"
     "country-name"
     "main"
-    "details";
+    "details"
+    "border";
 
   font-size: 14px;
 
@@ -23,7 +25,8 @@ const CountryDetailDiv = styled.div`
     grid-template-rows: min-content 1fr;
     grid-template-areas:
       "flag country-name ."
-      "flag main details";
+      "flag main details"
+      "flag border border";
     font-size: 16px;
   }
 `;
@@ -48,8 +51,43 @@ const AdditionalDetails = styled.div`
   grid-area: details;
 `;
 
+const BorderCountries = styled.div`
+  margin-top: 34px;
+  grid-area: border;
+  display: flex;
+  flex-direction: column;
+
+  ${Heading3} {
+    white-space: nowrap;
+    margin-bottom: 16px;
+
+    @media (min-width: 700px) {
+      margin-bottom: 0;
+      margin-right: 11px;
+    }
+  }
+
+  @media (min-width: 700px) {
+    margin-top: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+`;
+
+const BorderCountryButtons = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+  width: 100%;
+
+  @media (min-width: 700px) {
+    margin-bottom: 0;
+  }
+`;
+
 const CountryDetail: React.FC<Country> = (props) => {
-  const { flag, name, population, region, capital } = props;
+  const { flag, name, population, region, capital, borders } = props;
   return (
     <CountryDetailDiv>
       <Flag src={flag} />
@@ -86,18 +124,24 @@ const CountryDetail: React.FC<Country> = (props) => {
           </div>
           <div>
             <dt>Currencies</dt>
-            <dd>
-              {props.currencies.map((currency) => currency.name).join(", ")}
-            </dd>
+            <dd>{props.currencies.join(", ")}</dd>
           </div>
           <div>
             <dt>Languages</dt>
-            <dd>
-              {props.languages.map((language) => language.name).join(", ")}
-            </dd>
+            <dd>{props.languages.join(", ")}</dd>
           </div>
         </InlineDefinitionList>
       </AdditionalDetails>
+      <BorderCountries>
+        <Heading3>Border Countries:</Heading3>
+        <BorderCountryButtons>
+          {borders.map(({ alpha3Code, name: borderCountry }) => (
+            <ButtonLink key={alpha3Code} to={`/countries/${alpha3Code}`}>
+              {borderCountry}
+            </ButtonLink>
+          ))}
+        </BorderCountryButtons>
+      </BorderCountries>
     </CountryDetailDiv>
   );
 };
