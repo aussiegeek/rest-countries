@@ -8,7 +8,7 @@ const HeaderDiv = styled.div`
   box-shadow: ${(props): string => props.theme.headerShadow};
 
   @media (min-width: 700px) {
-    padding: auto 80px;
+    padding: 0 80px;
   }
 `;
 

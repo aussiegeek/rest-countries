@@ -1,0 +1,19 @@
+{
+  "processors": [
+    "stylelint-processor-styled-components"
+  ],
+  "plugins": [
+    "stylelint-no-indistinguishable-colors",
+    "stylelint-csstree-validator",
+    "stylelint-color-format"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-styled-components"
+  ],
+  "rules": {
+    "plugin/stylelint-no-indistinguishable-colors": true,
+    "csstree/validator": true,
+    "color-format/format": { "format": "hsl" }
+  }
+}

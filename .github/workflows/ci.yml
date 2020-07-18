@@ -48,6 +48,9 @@ jobs:
       - name: ESLint
         run: yarn lint
 
+      - name: Stylelint
+        run: yarn stylelint
+
       - name: Tests
         run: yarn test
 
