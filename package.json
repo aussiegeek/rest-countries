@@ -2,40 +2,18 @@
   "name": "rest-countries",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@reach/router": "^1.3.3",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/reach__router": "^1.3.5",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "@types/styled-components": "^5.1.0",
-    "babel-plugin-styled-components": "^1.10.7",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "styled-components": "^5.1.0",
-    "typescript": "~3.7.2",
-    "use-http": "^1.0.9"
-  },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "typescript:check": "tsc --noEmit",
+    "chromatic": "chromatic",
+    "eject": "react-scripts eject",
     "lint": "yarn eslint --max-warnings=0 --ext .js,.jsx,.ts,.tsx .",
     "lint:fix": "yarn eslint --max-warnings=0 --ext .js,.jsx,.ts,.tsx --fix .",
-    "chromatic": "chromatic",
-    "stylelint": "stylelint 'src/**/*.tsx'"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "start": "react-scripts start",
+    "storybook": "start-storybook -p 9009 -s public",
+    "stylelint": "stylelint 'src/**/*.tsx'",
+    "test": "react-scripts test",
+    "typescript:check": "tsc --noEmit"
   },
   "browserslist": {
     "production": [
@@ -48,6 +26,33 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.5",
+    "@reach/router": "^1.3.3",
+    "@testing-library/dom": "^7.21.1",
+    "@testing-library/jest-dom": "^5.11.1",
+    "@testing-library/react": "^10.4.7",
+    "@testing-library/user-event": "^12.0.11",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/reach__router": "^1.3.5",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/styled-components": "^5.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.0",
+    "typescript": "~3.7.2",
+    "use-http": "^1.0.9",
+    "webpack": "4.42.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.3.18",
@@ -73,6 +78,7 @@
     "eslint-plugin-testing-library": "^3.0.4",
     "prettier": "^2.0.5",
     "react-test-renderer": "^16.13.1",
+    "sort-package-json": "^1.44.0",
     "stylelint": "^13.3.3",
     "stylelint-color-format": "^1.1.0",
     "stylelint-config-standard": "^20.0.0",
