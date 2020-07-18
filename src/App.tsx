@@ -13,10 +13,10 @@ const Content = styled.div`
   }
 `;
 
-const App: React.FC = () => (
+const App: React.FC =     () => (
   <div>
     <ThemeManager>
-      <Header />
+            <Header />
       <GlobalStyle />
       <Content>
         <Routes />
