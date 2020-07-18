@@ -16,7 +16,6 @@ const CountryDetailDiv = styled.div`
     "main"
     "details"
     "border";
-
   font-size: 14px;
 
   @media (min-width: 700px) {

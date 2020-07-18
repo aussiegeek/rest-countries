@@ -15,6 +15,7 @@ const CountryListContainer = styled.div`
   grid-auto-rows: min-content;
   row-gap: 32px;
   column-gap: 74px;
+
   @media (min-width: 700px) {
     row-gap: 67px;
   }
