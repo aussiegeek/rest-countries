@@ -55,5 +55,6 @@ jobs:
       - name: Chroma
         uses: chromaui/action@v1
         with:
+          exitOnceUploaded: true
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
