@@ -63,7 +63,7 @@
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.0",
     "typescript": "~3.9.7",
-    "use-http": "^1.0.9",
+    "use-http": "^1.0.13",
     "webpack": "4.42.0"
   },
   "devDependencies": {
