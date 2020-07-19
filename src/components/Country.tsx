@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components/macro";
 import { Heading2 } from "./Headings";
 import InlineDefinitionList from "./InlineDefinitionList";
+import { Country as GraphQLCountry } from "../generated/graphql";
+import { regionNameMapping } from "../regionNameMapping";
 
 const CountryDiv = styled.div`
   background: ${(props): string => props.theme.element.background};
@@ -37,33 +39,26 @@ const Main = styled.div`
   margin-bottom: 46px;
 `;
 
-interface CountryDetails {
-  name: string;
-  flag: string;
-  region: string;
-  capital: string;
-  population: number;
-}
+export type CountryProps = Pick<
+  GraphQLCountry,
+  "name" | "flagURL" | "region" | "capitalCities"
+>;
 
-const Country: React.FC<CountryDetails> = (props) => {
-  const { flag, name, population, region, capital } = props;
+const Country: React.FC<CountryProps> = (props) => {
+  const { flagURL, name, region, capitalCities } = props;
   return (
     <CountryDiv>
-      <Flag src={flag} />
+      <Flag src={flagURL} />
       <CountryName>{name}</CountryName>
       <Main>
         <InlineDefinitionList>
           <div>
-            <dt>Population</dt>
-            <dd>{population}</dd>
-          </div>
-          <div>
             <dt>Region</dt>
-            <dd>{region}</dd>
+            <dd>{regionNameMapping[region]}</dd>
           </div>
           <div>
             <dt>Capital</dt>
-            <dd>{capital}</dd>
+            <dd>{capitalCities.join(", ")}</dd>
           </div>
         </InlineDefinitionList>
       </Main>

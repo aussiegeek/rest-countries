@@ -1,13 +1,13 @@
 import React from "react";
 import Country from "./Country";
+import { Region } from "../generated/graphql";
 
 export const Default = () => (
   <Country
-    flag="https://restcountries.eu/data/bel.svg"
+    flagURL="https://restcountries.eu/data/bel.svg"
     name="Belgium"
-    population={11319511}
-    region="Europe"
-    capital="Brussels"
+    region={Region.Europe}
+    capitalCities={["Brussels"]}
   />
 );
 

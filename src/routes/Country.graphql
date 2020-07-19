@@ -1,0 +1,26 @@
+query Country($cca3: String!) {
+  country(cca3: $cca3) {
+    cca3
+    capitalCities
+    region
+    flagURL
+    name
+    names {
+      common
+      type
+    }
+    subregion
+    tld
+    currencies {
+      name
+    }
+    borders {
+      cca3
+      name
+    }
+    languages {
+      name
+      code
+    }
+  }
+}

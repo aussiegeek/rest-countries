@@ -2,22 +2,17 @@ import React from "react";
 import { render } from "../utils/test-utils";
 
 import Country from "./Country";
+import { Region } from "../generated/graphql";
 
 describe("compact country details", () => {
   const MiniDetail = (
     <Country
-      flag="https://restcountries.eu/data/bel.svg"
+      flagURL="https://restcountries.eu/data/bel.svg"
       name="Belgium"
-      population={11319511}
-      region="Europe"
-      capital="Brussels"
+      region={Region.Europe}
+      capitalCities={["Brussels"]}
     />
   );
-
-  test("it includes the population", () => {
-    const { getByText } = render(MiniDetail);
-    expect(getByText("11319511")).toBeInTheDocument();
-  });
 
   test("it doesn't include the native name", () => {
     const { queryByText } = render(MiniDetail);

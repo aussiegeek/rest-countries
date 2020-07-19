@@ -2,14 +2,13 @@ import React from "react";
 import { RouteComponentProps } from "@reach/router";
 import styled from "styled-components/macro";
 
-import { CountryRecord } from "../types";
 import CountryDetail from "../components/CountryDetail";
 import { ButtonLink } from "../components/Link";
+import { useCountryQuery } from "../generated/graphql";
 
 const CountryContainer = styled.div``;
 interface CountryProps extends RouteComponentProps {
-  countries: CountryRecord;
-  code?: string;
+  cca3?: string;
 }
 
 const BackButton = styled(ButtonLink)`
@@ -20,13 +19,25 @@ const BackButton = styled(ButtonLink)`
   }
 `;
 
-const CountryRoute: React.FC<CountryProps> = ({ countries, code }) => {
-  if (!code) return null;
-
-  const country = countries[code];
-  if (!country) {
-    return <span>country not found</span>;
+const CountryRoute: React.FC<CountryProps> = ({ cca3 }) => {
+  const variables = typeof cca3 === "string" ? { cca3 } : undefined;
+  const { data, loading, error } = useCountryQuery({ variables });
+  if (loading) {
+    return <span>Loading...</span>;
   }
+  if (error) {
+    return (
+      <div>
+        <h1>Something went wrong</h1>
+        {error.message}
+      </div>
+    );
+  }
+
+  if (!cca3 || !data || !data.country) return <span>Country not found</span>;
+
+  const { country } = data;
+
   return (
     <CountryContainer>
       <BackButton to="/">Back</BackButton>
