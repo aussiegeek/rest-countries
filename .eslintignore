@@ -3,3 +3,5 @@ src/serviceWorker.ts
 coverage
 storybook-static
 babel-plugin-macros.config.js
+src/generated/graphql.tsx
+apollo.config.js

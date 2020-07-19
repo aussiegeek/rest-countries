@@ -1,0 +1,9 @@
+query Home {
+  countries {
+    name
+    cca3
+    flagURL
+    region
+    capitalCities
+  }
+}

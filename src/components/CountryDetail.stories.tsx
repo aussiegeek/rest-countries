@@ -1,24 +1,24 @@
 import React from "react";
 import CountryDetail from "./CountryDetail";
+import { Region, CountryNameType } from "../generated/graphql";
 
 export const Default = () => (
   <CountryDetail
-    flag="https://restcountries.eu/data/bel.svg"
+    flagURL="https://restcountries.eu/data/bel.svg"
     name="Belgium"
-    nativeName="België"
-    population={11319511}
-    region="Europe"
+    names={[{ type: CountryNameType.Native, common: "Belië" }]}
+    region={Region.Europe}
     subregion="Western Europe"
-    capital="Brussels"
-    topLevelDomain={[".be"]}
-    currencies={["Euro"]}
-    languages={["Dutch", "French", "German"]}
-    alpha3Code="bel"
+    capitalCities={["Brussels"]}
+    tld={[".be"]}
+    currencies={[{ name: "Euro" }]}
+    languages={[{ name: "Dutch" }, { name: "French" }, { name: "German" }]}
+    cca3="bel"
     borders={[
-      { name: "France", alpha3Code: "France" },
-      { name: "Germany", alpha3Code: "DEU" },
-      { name: "Luxembourg", alpha3Code: "LUX" },
-      { name: "Netherlands", alpha3Code: "NLD" },
+      { name: "France", cca3: "France" },
+      { name: "Germany", cca3: "DEU" },
+      { name: "Luxembourg", cca3: "LUX" },
+      { name: "Netherlands", cca3: "NLD" },
     ]}
   />
 );

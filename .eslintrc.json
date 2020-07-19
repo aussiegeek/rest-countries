@@ -41,7 +41,10 @@
   },
   "overrides": [
     {
-      "files": "src/**/*.stories.tsx",
+      "files": [
+        "src/**/*.stories.tsx",
+        "src/**/*.test.tsx"
+      ],
       "rules": {
         "@typescript-eslint/explicit-function-return-type": "off"
       }

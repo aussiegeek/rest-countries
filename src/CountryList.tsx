@@ -2,11 +2,10 @@ import React from "react";
 import styled from "styled-components/macro";
 
 import { UnstyledLink } from "./components/Link";
-import { Country as CountryInterface } from "./types";
-import Country from "./components/Country";
+import Country, { CountryProps } from "./components/Country";
 
 interface CountryListProps {
-  countries: CountryInterface[];
+  countries: Array<CountryProps & { cca3: string }>;
 }
 
 const CountryListContainer = styled.div`
@@ -26,8 +25,8 @@ const CountryList: React.FC<CountryListProps> = ({ countries }) => {
   return (
     <CountryListContainer>
       {countries.map((country) => (
-        <CountryDetailContainer key={country.alpha3Code}>
-          <UnstyledLink to={`/countries/${country.alpha3Code}`}>
+        <CountryDetailContainer key={country.cca3}>
+          <UnstyledLink to={`/countries/${country.cca3}`}>
             <Country {...country} />
           </UnstyledLink>
         </CountryDetailContainer>

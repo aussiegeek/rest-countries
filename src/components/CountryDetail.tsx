@@ -1,9 +1,16 @@
 import React from "react";
 import styled from "styled-components/macro";
+import {
+  Country as GraphQLCountry,
+  CountryName as GraphQLCountryName,
+  Currency,
+  Language,
+  CountryNameType,
+} from "../generated/graphql";
 import { Heading1, Heading3 } from "./Headings";
-import { Country } from "../types";
 import InlineDefinitionList from "./InlineDefinitionList";
 import { ButtonLink } from "./Link";
+import { regionNameMapping } from "../regionNameMapping";
 
 const CountryDetailDiv = styled.div`
   background: ${(props): string => props.theme.background};
@@ -85,33 +92,59 @@ const BorderCountryButtons = styled.div`
   }
 `;
 
-const CountryDetail: React.FC<Country> = (props) => {
-  const { flag, name, population, region, capital, borders } = props;
+export type CountryDetailProps = Pick<
+  GraphQLCountry,
+  "cca3" | "flagURL" | "name" | "region" | "capitalCities" | "subregion" | "tld"
+> & {
+  currencies: Array<Pick<Currency, "name">>;
+  borders: Array<Pick<GraphQLCountry, "cca3" | "name">>;
+  languages: Array<Pick<Language, "name">>;
+  names: Array<Pick<GraphQLCountryName, "type" | "common">>;
+};
+
+const CountryDetail: React.FC<CountryDetailProps> = (props) => {
+  const {
+    flagURL,
+    name,
+    names,
+    region,
+    capitalCities,
+    borders,
+    subregion,
+    tld,
+    currencies,
+    languages,
+  } = props;
   return (
     <CountryDetailDiv>
-      <Flag src={flag} />
+      <Flag src={flagURL} />
       <CountryName>{name}</CountryName>
       <Main>
         <InlineDefinitionList>
           <div>
             <dt>Native Name</dt>
-            <dd>{props.nativeName}</dd>
+            <dd>
+              {names
+                .filter(({ type }) => type === CountryNameType.Native)
+                .map(({ common }) => common)
+                .join(", ")}
+            </dd>
           </div>
-          <div>
+          {/* <div>
             <dt>Population</dt>
             <dd>{population}</dd>
-          </div>
+          </div> */}
           <div>
             <dt>Region</dt>
-            <dd>{region}</dd>
+            <dd>{regionNameMapping[region]}</dd>
           </div>
           <div>
             <dt>Sub Region</dt>
-            <dd>{props.subregion}</dd>
+            <dd>{subregion}</dd>
           </div>
           <div>
             <dt>Capital</dt>
-            <dd>{capital}</dd>
+            <dd>{capitalCities.join(", ")}</dd>
           </div>
         </InlineDefinitionList>
       </Main>
@@ -119,23 +152,31 @@ const CountryDetail: React.FC<Country> = (props) => {
         <InlineDefinitionList>
           <div>
             <dt>Top Level Domain</dt>
-            <dd>{props.topLevelDomain}</dd>
+            <dd>{tld}</dd>
           </div>
           <div>
             <dt>Currencies</dt>
-            <dd>{props.currencies.join(", ")}</dd>
+            <dd>
+              {currencies
+                .map(({ name: currencyName }) => currencyName)
+                .join(", ")}
+            </dd>
           </div>
           <div>
             <dt>Languages</dt>
-            <dd>{props.languages.join(", ")}</dd>
+            <dd>
+              {languages
+                .map(({ name: languageName }) => languageName)
+                .join(", ")}
+            </dd>
           </div>
         </InlineDefinitionList>
       </AdditionalDetails>
       <BorderCountries>
         <Heading3>Border Countries:</Heading3>
         <BorderCountryButtons>
-          {borders.map(({ alpha3Code, name: borderCountry }) => (
-            <ButtonLink key={alpha3Code} to={`/countries/${alpha3Code}`}>
+          {borders.map(({ cca3, name: borderCountry }) => (
+            <ButtonLink key={cca3} to={`/countries/${cca3}`}>
               {borderCountry}
             </ButtonLink>
           ))}
