@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "../utils/test-utils";
+import { render, screen } from "../utils/test-utils";
 
 import Country from "./Country";
 import { Region } from "../generated/graphql";
@@ -15,8 +15,8 @@ describe("compact country details", () => {
   );
 
   test("it doesn't include the native name", () => {
-    const { queryByText } = render(MiniDetail);
-    expect(queryByText("België")).not.toBeInTheDocument();
+    render(MiniDetail);
+    expect(screen.queryByText("België")).not.toBeInTheDocument();
   });
 
   test("it includes the country name", () => {
