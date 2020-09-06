@@ -2,7 +2,7 @@ import React from "react";
 import Country from "./Country";
 import { Region } from "../generated/graphql";
 
-export const Default = () => (
+export const Default: React.FC = () => (
   <Country
     flagURL="https://restcountries.eu/data/bel.svg"
     name="Belgium"

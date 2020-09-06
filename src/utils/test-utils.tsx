@@ -1,6 +1,6 @@
 import React from "react";
 import fs from "fs";
-import { render, RenderOptions } from "@testing-library/react";
+import { render, RenderOptions, RenderResult } from "@testing-library/react";
 import {
   makeExecutableSchema,
   IExecutableSchemaDefinition,
@@ -23,11 +23,19 @@ const AllTheProviders: React.ComponentType = ({ children }) => {
   return <ThemeProvider theme={LightTheme}>{children}</ThemeProvider>;
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const customRender: any = (
-  ui: React.ReactElement,
-  options?: Omit<RenderOptions, "queries">
-) => render(ui, { wrapper: AllTheProviders, ...options });
+const customRender = (
+  ui: JSX.Element,
+  options?:
+    | Pick<
+        RenderOptions<typeof import("@testing-library/dom/types/queries")>,
+        "container" | "baseElement" | "hydrate" | "wrapper"
+      >
+    | undefined
+): RenderResult => {
+  return {
+    ...render(ui, { wrapper: AllTheProviders, ...options }),
+  };
+};
 
 // re-export everything
 export * from "@testing-library/react";

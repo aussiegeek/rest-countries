@@ -1,8 +1,7 @@
-import gql from 'graphql-tag';
-import * as ApolloReactCommon from '@apollo/client';
-import * as ApolloReactHooks from '@apollo/client';
+import { gql } from '@apollo/client';
+import * as Apollo from '@apollo/client';
 export type Maybe<T> = T | null;
-export type Exact<T extends { [key: string]: any }> = { [K in keyof T]: T[K] };
+export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
   ID: string;
@@ -214,15 +213,15 @@ export const CountryDocument = gql`
  *   },
  * });
  */
-export function useCountryQuery(baseOptions?: ApolloReactHooks.QueryHookOptions<CountryQuery, CountryQueryVariables>) {
-        return ApolloReactHooks.useQuery<CountryQuery, CountryQueryVariables>(CountryDocument, baseOptions);
+export function useCountryQuery(baseOptions?: Apollo.QueryHookOptions<CountryQuery, CountryQueryVariables>) {
+        return Apollo.useQuery<CountryQuery, CountryQueryVariables>(CountryDocument, baseOptions);
       }
-export function useCountryLazyQuery(baseOptions?: ApolloReactHooks.LazyQueryHookOptions<CountryQuery, CountryQueryVariables>) {
-          return ApolloReactHooks.useLazyQuery<CountryQuery, CountryQueryVariables>(CountryDocument, baseOptions);
+export function useCountryLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<CountryQuery, CountryQueryVariables>) {
+          return Apollo.useLazyQuery<CountryQuery, CountryQueryVariables>(CountryDocument, baseOptions);
         }
 export type CountryQueryHookResult = ReturnType<typeof useCountryQuery>;
 export type CountryLazyQueryHookResult = ReturnType<typeof useCountryLazyQuery>;
-export type CountryQueryResult = ApolloReactCommon.QueryResult<CountryQuery, CountryQueryVariables>;
+export type CountryQueryResult = Apollo.QueryResult<CountryQuery, CountryQueryVariables>;
 export const HomeDocument = gql`
     query Home {
   countries {
@@ -250,12 +249,12 @@ export const HomeDocument = gql`
  *   },
  * });
  */
-export function useHomeQuery(baseOptions?: ApolloReactHooks.QueryHookOptions<HomeQuery, HomeQueryVariables>) {
-        return ApolloReactHooks.useQuery<HomeQuery, HomeQueryVariables>(HomeDocument, baseOptions);
+export function useHomeQuery(baseOptions?: Apollo.QueryHookOptions<HomeQuery, HomeQueryVariables>) {
+        return Apollo.useQuery<HomeQuery, HomeQueryVariables>(HomeDocument, baseOptions);
       }
-export function useHomeLazyQuery(baseOptions?: ApolloReactHooks.LazyQueryHookOptions<HomeQuery, HomeQueryVariables>) {
-          return ApolloReactHooks.useLazyQuery<HomeQuery, HomeQueryVariables>(HomeDocument, baseOptions);
+export function useHomeLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<HomeQuery, HomeQueryVariables>) {
+          return Apollo.useLazyQuery<HomeQuery, HomeQueryVariables>(HomeDocument, baseOptions);
         }
 export type HomeQueryHookResult = ReturnType<typeof useHomeQuery>;
 export type HomeLazyQueryHookResult = ReturnType<typeof useHomeLazyQuery>;
-export type HomeQueryResult = ApolloReactCommon.QueryResult<HomeQuery, HomeQueryVariables>;
+export type HomeQueryResult = Apollo.QueryResult<HomeQuery, HomeQueryVariables>;
