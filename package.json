@@ -5,8 +5,11 @@
   "scripts": {
     "build": "react-scripts build",
     "build-storybook": "build-storybook -s public",
+    "build:fab": "yarn run build && yarn run fab:build",
     "chromatic": "chromatic",
     "eject": "react-scripts eject",
+    "fab:build": "fab build",
+    "fab:serve": "fab serve fab.zip",
     "graphql:types": "graphql-codegen --config codegen.yml",
     "lint": "yarn eslint --max-warnings=0 --ext .js,.jsx,.ts,.tsx .",
     "lint:fix": "yarn eslint --max-warnings=0 --ext .js,.jsx,.ts,.tsx --fix .",
@@ -73,6 +76,12 @@
     "webpack": "4.42.0"
   },
   "devDependencies": {
+    "@fab/actions": "^1.0.0-rc.6",
+    "@fab/cli": "^1.0.0-rc.6",
+    "@fab/input-static": "^1.0.0-rc.6",
+    "@fab/plugin-render-html": "^1.0.0-rc.6",
+    "@fab/plugin-rewire-assets": "^1.0.0-rc.6",
+    "@fab/server": "^1.0.0-rc.6.p1",
     "@graphql-codegen/cli": "1.17.8",
     "@graphql-codegen/introspection": "^1.17.8",
     "@graphql-codegen/schema-ast": "^1.17.8",
