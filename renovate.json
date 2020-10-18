@@ -4,5 +4,13 @@
   ],
   "ignorePaths": [
     ".yarn/sdks"
+  ],
+  "packageRules": [
+    {
+      "depTypeList": [
+        "devDependencies"
+      ],
+      "automerge": true
+    }
   ]
 }

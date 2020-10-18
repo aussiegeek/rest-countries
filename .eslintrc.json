@@ -37,6 +37,15 @@
           "!styled-components/macro"
         ]
       }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "src/setupTests.ts",
+          "src/utils/test-utils.tsx"
+        ]
+      }
     ]
   },
   "overrides": [
