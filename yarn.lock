@@ -5571,9 +5571,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:7.24.1":
-  version: 7.24.1
-  resolution: "@testing-library/dom@npm:7.24.1"
+"@testing-library/dom@npm:7.26.0":
+  version: 7.26.0
+  resolution: "@testing-library/dom@npm:7.26.0"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/runtime": ^7.10.3
@@ -5581,8 +5581,9 @@ __metadata:
     aria-query: ^4.2.2
     chalk: ^4.1.0
     dom-accessibility-api: ^0.5.1
+    lz-string: ^1.4.4
     pretty-format: ^26.4.2
-  checksum: e5ebd9a27e48f48012b77888e6c2bb16b6e36c2fe4db299ea17fb25d427491afea28cb3bf33379a4ea8d1f4fc76ef294964027747f58c102c69086ed1a1dbe50
+  checksum: 9f4d67269d32e41ccae0bacad63d72d7a2ae77b77a14dccd30382ea0b670df3b3bd9767cfb1014b01827dd296db50d0d29d96cf11954f712372ea7b96db59e8e
   languageName: node
   linkType: hard
 
@@ -18297,6 +18298,15 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"lz-string@npm:^1.4.4":
+  version: 1.4.4
+  resolution: "lz-string@npm:1.4.4"
+  bin:
+    lz-string: bin/bin.js
+  checksum: 60a13f8a724d109cffc7dda4cb98569adfa0516750f8a75b7236f6bc94b47edffb59e8a1e501364404e3867cf399e6612c3981f9c81c2de75751203431bf2e69
+  languageName: node
+  linkType: hard
+
 "make-dir@npm:^1.3.0":
   version: 1.3.0
   resolution: "make-dir@npm:1.3.0"
@@ -23163,7 +23173,7 @@ resolve@1.15.0:
     "@storybook/addons": 6.0.21
     "@storybook/preset-create-react-app": 3.1.4
     "@storybook/react": 6.0.21
-    "@testing-library/dom": 7.24.1
+    "@testing-library/dom": 7.26.0
     "@testing-library/jest-dom": 5.11.4
     "@testing-library/react": 11.0.2
     "@testing-library/user-event": 12.1.3
