@@ -105,7 +105,7 @@
     "husky": "4.3.0",
     "jest": "24.9.0",
     "lint-staged": "10.4.2",
-    "prettier": "2.1.1",
+    "prettier": "2.1.2",
     "react-test-renderer": "16.13.1",
     "sort-package-json": "1.44.0",
     "stylelint": "13.7.0",
