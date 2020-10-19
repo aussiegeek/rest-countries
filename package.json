@@ -80,7 +80,7 @@
     "@testing-library/jest-dom": "5.11.4",
     "@testing-library/react": "11.1.0",
     "@testing-library/user-event": "12.1.8",
-    "@types/faker": "4.1.12",
+    "@types/faker": "5.1.2",
     "@types/jest": "24.9.1",
     "@types/react-test-renderer": "16.9.3",
     "@typescript-eslint/eslint-plugin": "4.0.1",
