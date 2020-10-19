@@ -9788,9 +9788,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:5.1.0":
-  version: 5.1.0
-  resolution: "chromatic@npm:5.1.0"
+"chromatic@npm:5.2.0":
+  version: 5.2.0
+  resolution: "chromatic@npm:5.2.0"
   dependencies:
     "@babel/preset-react": ^7.9.4
     "@babel/runtime": ^7.9.2
@@ -9834,7 +9834,7 @@ __metadata:
     chroma: bin/register.js
     chromatic: bin/register.js
     chromatic-cli: bin/register.js
-  checksum: 29791dd4e54f700a36ea928cc29f508153e02fcecbc169d498012c6ac599ce4b917d3b2f5b17d612a9e2b651d2df50217c54ff4ed40ac70f0ce6e182009f4001
+  checksum: 0fa7de75a6f8174b2cb8832cec7479d17089ceb77d9b6972726f7fc94ac96809c9400a687999f22826857f2fb682f95cda6ffe0f67e7ccc6b36763e1c684760e
   languageName: node
   linkType: hard
 
@@ -23205,7 +23205,7 @@ resolve@1.15.0:
     babel-loader: 8.1.0
     babel-plugin-macros: 2.8.0
     babel-plugin-styled-components: 1.11.1
-    chromatic: 5.1.0
+    chromatic: 5.2.0
     eslint: 6.8.0
     eslint-config-airbnb-typescript: 10.0.0
     eslint-config-prettier: 6.11.0
