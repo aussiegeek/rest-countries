@@ -17804,9 +17804,9 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:10.3.0":
-  version: 10.3.0
-  resolution: "lint-staged@npm:10.3.0"
+"lint-staged@npm:10.4.2":
+  version: 10.4.2
+  resolution: "lint-staged@npm:10.4.2"
   dependencies:
     chalk: ^4.1.0
     cli-truncate: ^2.1.0
@@ -17825,7 +17825,7 @@ fsevents@^2.1.2:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 1e8bfa56f4aa817892032fd42cd47dd554121c4f22643a1f11e1879c638784664d83600f2f2304123b89354e8a3365f28435cbe654f92aaa0b6186df99355a00
+  checksum: bbd94e1dbf3e0eb361c262e7594dd4a4963cec87e8d90d3e2904d11f3b4cd9b14b3e923a97ca17ab76e460540f517d071557091890d4e1d8c54523741e882a28
   languageName: node
   linkType: hard
 
@@ -23260,7 +23260,7 @@ resolve@1.15.0:
     graphql: 15.3.0
     husky: 4.2.5
     jest: 24.9.0
-    lint-staged: 10.3.0
+    lint-staged: 10.4.2
     prettier: 2.1.1
     react: 16.13.1
     react-dom: 16.13.1
