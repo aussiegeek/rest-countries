@@ -108,7 +108,7 @@
     "prettier": "2.1.2",
     "react-test-renderer": "16.13.1",
     "sort-package-json": "1.46.0",
-    "stylelint": "13.7.0",
+    "stylelint": "13.7.2",
     "stylelint-color-format": "1.1.0",
     "stylelint-config-standard": "20.0.0",
     "stylelint-config-styled-components": "0.1.1",
