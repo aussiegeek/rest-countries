@@ -5860,12 +5860,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:24.9.1":
-  version: 24.9.1
-  resolution: "@types/jest@npm:24.9.1"
+"@types/jest@npm:26.0.14":
+  version: 26.0.14
+  resolution: "@types/jest@npm:26.0.14"
   dependencies:
-    jest-diff: ^24.3.0
-  checksum: 2a950309a2d848c292b0c324aa124e4833f6446ddfcdb1f854c454000738ab918ac45f57ddbd667491381ad55b138a21d7aa049d7fe642b6ea87095990aa054b
+    jest-diff: ^25.2.1
+    pretty-format: ^25.2.1
+  checksum: bddbe82d12217c5217efabcad09e4fbe2c5eaecf9392da9b0edbe4c3d9fb240b3fab914f88c5f3708f6d5046640a2782458944873eae4ac01abcb17d32d3c78f
   languageName: node
   linkType: hard
 
@@ -16551,7 +16552,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"jest-diff@npm:^24.3.0, jest-diff@npm:^24.9.0":
+"jest-diff@npm:^24.9.0":
   version: 24.9.0
   resolution: "jest-diff@npm:24.9.0"
   dependencies:
@@ -23376,7 +23377,7 @@ resolve@1.15.0:
     "@testing-library/react": 11.1.0
     "@testing-library/user-event": 12.1.8
     "@types/faker": 5.1.2
-    "@types/jest": 24.9.1
+    "@types/jest": 26.0.14
     "@types/node": 12.12.68
     "@types/reach__router": 1.3.5
     "@types/react": 16.9.34
