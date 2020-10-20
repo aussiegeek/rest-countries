@@ -6156,15 +6156,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/styled-components@npm:5.1.3":
-  version: 5.1.3
-  resolution: "@types/styled-components@npm:5.1.3"
+"@types/styled-components@npm:5.1.4":
+  version: 5.1.4
+  resolution: "@types/styled-components@npm:5.1.4"
   dependencies:
     "@types/hoist-non-react-statics": "*"
     "@types/react": "*"
     "@types/react-native": "*"
     csstype: ^3.0.2
-  checksum: 094b368f2cfe0f3ff69f8dc4c4f6c372512e62e1727e8c40e52ccd78174235e55386ecbc2fb44d5f5d753e6d4c0a92dcfcc2d2babe4456278cade7587f1968eb
+  checksum: 0f458fa8989ccf921200f590680580ab1d69dc198a6db27765974d0d707713ef38f6b2d1facbd8f9a411373cc2200f74def6d2f5b46dd037bc7687654152b2b0
   languageName: node
   linkType: hard
 
@@ -23447,7 +23447,7 @@ resolve@1.15.0:
     "@types/react": 16.9.34
     "@types/react-dom": 16.9.6
     "@types/react-test-renderer": 16.9.3
-    "@types/styled-components": 5.1.3
+    "@types/styled-components": 5.1.4
     "@typescript-eslint/eslint-plugin": 4.5.0
     "@typescript-eslint/parser": 4.5.0
     "@yarnpkg/pnpify": 2.3.3
