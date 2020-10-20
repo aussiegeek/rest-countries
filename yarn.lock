@@ -5565,9 +5565,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:7.26.1":
-  version: 7.26.1
-  resolution: "@testing-library/dom@npm:7.26.1"
+"@testing-library/dom@npm:7.26.2":
+  version: 7.26.2
+  resolution: "@testing-library/dom@npm:7.26.2"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/runtime": ^7.10.3
@@ -5577,7 +5577,7 @@ __metadata:
     dom-accessibility-api: ^0.5.1
     lz-string: ^1.4.4
     pretty-format: ^26.4.2
-  checksum: 29a962c7ed850bad7ac38e7f34fa026b386f9510d7caeeabd10e52be96132e356382453ce4df41df68f629cef6575f196bf292534553e6ffd53309cab3f3fc03
+  checksum: 59adca754b057ac3eb557ff876f3401cf0607467357bf42247d198f78804f0a8d9006b9995780f75d858d2dfacb3a00ffab9ec6febf63eb67cad89de0895cdac
   languageName: node
   linkType: hard
 
@@ -23490,7 +23490,7 @@ resolve@^1.18.1:
     "@storybook/addons": 6.0.26
     "@storybook/preset-create-react-app": 3.1.4
     "@storybook/react": 6.0.26
-    "@testing-library/dom": 7.26.1
+    "@testing-library/dom": 7.26.2
     "@testing-library/jest-dom": 5.11.4
     "@testing-library/react": 11.1.0
     "@testing-library/user-event": 12.1.8
