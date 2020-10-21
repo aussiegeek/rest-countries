@@ -1,16 +1,4 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "ignorePaths": [
-    ".yarn/sdks"
-  ],
-  "packageRules": [
-    {
-      "depTypeList": [
-        "devDependencies"
-      ],
-      "automerge": true
-    }
-  ]
+  "extends": ["github>aussiegeek/renovate-config"],
+  "ignorePaths": [".yarn/sdks"]
 }
