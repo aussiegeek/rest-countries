@@ -6120,13 +6120,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:16.9.34":
+"@types/react@npm:*":
   version: 16.9.34
   resolution: "@types/react@npm:16.9.34"
   dependencies:
     "@types/prop-types": "*"
     csstype: ^2.2.0
   checksum: 40912bdb87db9663ee77b7a0980c07a7a2617ec60495631d6f9575f4abab41269fad522eb4d6d2109e119c06891d03ac65bb96ddb847fc35c8a5558bfb4ebae0
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:16.9.53":
+  version: 16.9.53
+  resolution: "@types/react@npm:16.9.53"
+  dependencies:
+    "@types/prop-types": "*"
+    csstype: ^3.0.2
+  checksum: 01c646c8f08306660441a14495e926c0362114da7813c3bc3d4d58b47590ee92274bbbff18f3fafd465a09369daa25982d68ba6628f1080120b62d40ce75ca40
   languageName: node
   linkType: hard
 
@@ -23549,7 +23559,7 @@ resolve@^1.18.1:
     "@types/jest": 26.0.15
     "@types/node": 12.12.68
     "@types/reach__router": 1.3.5
-    "@types/react": 16.9.34
+    "@types/react": 16.9.53
     "@types/react-dom": 16.9.6
     "@types/react-test-renderer": 16.9.3
     "@types/styled-components": 5.1.4
