@@ -104,7 +104,7 @@
     "faker": "5.1.0",
     "husky": "4.3.0",
     "jest": "24.9.0",
-    "lint-staged": "10.4.2",
+    "lint-staged": "10.5.0",
     "prettier": "2.1.2",
     "react-test-renderer": "16.14.0",
     "sort-package-json": "1.46.1",
