@@ -6175,10 +6175,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:12.19.1":
-  version: 12.19.1
-  resolution: "@types/node@npm:12.19.1"
-  checksum: 97073fc8607ade40544759fccf19b9b7497db75d2d3477774f42d55719ac5f7665366f23c930dfb51e191cb6327c29cfdf46d546f5dd1f634023832be987e3cd
+"@types/node@npm:12.19.3":
+  version: 12.19.3
+  resolution: "@types/node@npm:12.19.3"
+  checksum: ef8ae4d86896d6cdcd4bda92fb43da62f6397e7a4041d492309771a51e85ec5918dbee6495d8b591fd87d7265468c87f4b5e986bc4f0362e1184b610c6b8abac
   languageName: node
   linkType: hard
 
@@ -23735,7 +23735,7 @@ resolve@^1.18.1:
     "@testing-library/user-event": 12.1.10
     "@types/faker": 5.1.3
     "@types/jest": 26.0.15
-    "@types/node": 12.19.1
+    "@types/node": 12.19.3
     "@types/reach__router": 1.3.6
     "@types/react": 16.9.53
     "@types/react-dom": 16.9.8
