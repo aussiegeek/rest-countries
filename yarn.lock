@@ -3258,12 +3258,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/cli@npm:1.18.0":
-  version: 1.18.0
-  resolution: "@graphql-codegen/cli@npm:1.18.0"
+"@graphql-codegen/cli@npm:1.19.0":
+  version: 1.19.0
+  resolution: "@graphql-codegen/cli@npm:1.19.0"
   dependencies:
     "@graphql-codegen/core": 1.17.8
-    "@graphql-codegen/plugin-helpers": ^1.17.9
+    "@graphql-codegen/plugin-helpers": ^1.18.0
     "@graphql-tools/apollo-engine-loader": ^6
     "@graphql-tools/code-file-loader": ^6
     "@graphql-tools/git-loader": ^6
@@ -3305,14 +3305,14 @@ __metadata:
     upper-case: ^2.0.1
     valid-url: ^1.0.9
     wrap-ansi: ^7.0.0
-    yargs: ^16.0.3
+    yargs: ^16.1.0
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
   bin:
     gql-gen: bin.js
     graphql-code-generator: bin.js
     graphql-codegen: bin.js
-  checksum: fb75a7b60a127d129c4209b1e3b906f63609469d5d82b8616dcc9fb0705b412645f2c964f5d97b312ed26946b870493a42793831bc002ff81a72284c8ef449f9
+  checksum: 8c7618d32781f19dd07784218c2c6e214d4e3eb74038ec15608b9b360e4f3758134699b7420cc4cb2cd32cbdba76edf06de143592dd45be7490e6f39b3bea666
   languageName: node
   linkType: hard
 
@@ -3381,6 +3381,27 @@ __metadata:
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
   checksum: ad50ba3f5e4b9a2aea9fa234106c4b515e23b684e32feeedb695bcc0a2917ff293c8ee9442868cc13e17be840802c7bc093d915bd1b8d57fd5cfe85fd3c3c9a7
+  languageName: node
+  linkType: hard
+
+"@graphql-codegen/plugin-helpers@npm:^1.18.0":
+  version: 1.18.0
+  resolution: "@graphql-codegen/plugin-helpers@npm:1.18.0"
+  dependencies:
+    "@graphql-tools/utils": ^6
+    camel-case: 4.1.1
+    common-tags: 1.8.0
+    constant-case: 3.0.3
+    import-from: 3.0.0
+    lodash: ~4.17.20
+    lower-case: 2.0.1
+    param-case: 3.0.3
+    pascal-case: 3.1.1
+    tslib: ~2.0.1
+    upper-case: 2.0.1
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+  checksum: ef63fb5d9849a3a1309dd0721d8e51425c189beb56e84038f6a086da9a447e42a9602ee8f7b6ebcbd7a5f5af195c9d659a2df86bc095a647fbaf633309e85778
   languageName: node
   linkType: hard
 
@@ -23693,7 +23714,7 @@ resolve@^1.18.1:
   dependencies:
     "@apollo/client": 3.1.4
     "@babel/core": 7.12.3
-    "@graphql-codegen/cli": 1.18.0
+    "@graphql-codegen/cli": 1.19.0
     "@graphql-codegen/introspection": 1.18.0
     "@graphql-codegen/schema-ast": 1.17.8
     "@graphql-codegen/typescript": 1.17.11
@@ -27972,7 +27993,7 @@ typescript@3.9.7:
   languageName: node
   linkType: hard
 
-"yargs@npm:^16.0.3":
+"yargs@npm:^16.1.0":
   version: 16.1.0
   resolution: "yargs@npm:16.1.0"
   dependencies:
