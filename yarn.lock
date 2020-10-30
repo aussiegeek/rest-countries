@@ -11152,13 +11152,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-tree@npm:1.0.0-alpha.38":
-  version: 1.0.0-alpha.38
-  resolution: "css-tree@npm:1.0.0-alpha.38"
+"css-tree@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "css-tree@npm:1.0.0"
   dependencies:
-    mdn-data: 2.0.6
+    mdn-data: 2.0.12
     source-map: ^0.6.1
-  checksum: fa0b1453db0a896db5ecdffccb4c248d90df6a26bdee0052880339045df735f157336b400290242927995338f209cae85fffd26a77ebee5d3860bf17738fdf06
+  checksum: 5a641ebdeea7f6a1706dd96e0a530f8ebdc68be2e461c082b952d43b6fe2f70034079b1b7e1eed6e6cdb12d8fa3de9ca1fd1ea1f9a5fd28cbe6c2a77483a0455
   languageName: node
   linkType: hard
 
@@ -18147,17 +18147,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"mdn-data@npm:2.0.12":
+  version: 2.0.12
+  resolution: "mdn-data@npm:2.0.12"
+  checksum: 92e25b8909645a95676fa90c2166ce0d78b3e50eaa739c53e9d9114bee90adcdd450e6033f0a97c2e1e46f0f0ce08d77472accaff76ebe57b681536bc9722451
+  languageName: node
+  linkType: hard
+
 "mdn-data@npm:2.0.4":
   version: 2.0.4
   resolution: "mdn-data@npm:2.0.4"
   checksum: bcecf9ae69505ff20a2913fa29849eec8b17fa7ab8c93e4bbec8020003f7fd9329478fc353e010ff0dbbca12fc296ff8cf40b6a5c93294c92df7dc8343880b99
-  languageName: node
-  linkType: hard
-
-"mdn-data@npm:2.0.6":
-  version: 2.0.6
-  resolution: "mdn-data@npm:2.0.6"
-  checksum: fc723bad3b7785daa6a18abe3422d710e8941a243703d749b5d4aa4f4bcbdc6a426a434f87001995578b278049fd0f91d5d3f869acd0f27e55a92752e6a4c8e0
   languageName: node
   linkType: hard
 
@@ -22938,7 +22938,7 @@ resolve@^1.18.1:
     stylelint-color-format: 1.1.0
     stylelint-config-standard: 20.0.0
     stylelint-config-styled-components: 0.1.1
-    stylelint-csstree-validator: 1.8.0
+    stylelint-csstree-validator: 1.9.0
     stylelint-no-indistinguishable-colors: 1.3.0
     stylelint-processor-styled-components: 1.10.0
     typescript: 3.9.7
@@ -24530,14 +24530,14 @@ resolve@^1.18.1:
   languageName: node
   linkType: hard
 
-"stylelint-csstree-validator@npm:1.8.0":
-  version: 1.8.0
-  resolution: "stylelint-csstree-validator@npm:1.8.0"
+"stylelint-csstree-validator@npm:1.9.0":
+  version: 1.9.0
+  resolution: "stylelint-csstree-validator@npm:1.9.0"
   dependencies:
-    css-tree: 1.0.0-alpha.38
+    css-tree: ^1.0.0
   peerDependencies:
     stylelint: ">=7.0.0 <14.0.0"
-  checksum: aea3b0da9a2d6eeb5682e2f374dad14011261591988ee76c23231e255150b5373be5df54cefb1dbfccd08518be9ab5fcdde02bc1d5a08bee6cba049f41dace79
+  checksum: 0780e54a8385074d33dff59bbc9aa1d231f1bdd92bc5b067de5f3b7f5b57d36d84bcd40d807afb0e6abc253b6835b976baf59c28b0c840358a4dbde8275f8428
   languageName: node
   linkType: hard
 
