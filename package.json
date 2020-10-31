@@ -52,7 +52,7 @@
     "@types/styled-components": "5.1.4",
     "babel-loader": "8.1.0",
     "babel-plugin-styled-components": "1.11.1",
-    "graphql": "15.3.0",
+    "graphql": "15.4.0",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-is": "16.13.1",
