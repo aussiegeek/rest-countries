@@ -33,20 +33,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apollo/client@npm:3.1.4":
-  version: 3.1.4
-  resolution: "@apollo/client@npm:3.1.4"
+"@apollo/client@npm:3.2.5":
+  version: 3.2.5
+  resolution: "@apollo/client@npm:3.2.5"
   dependencies:
+    "@graphql-typed-document-node/core": ^3.0.0
     "@types/zen-observable": ^0.8.0
     "@wry/context": ^0.5.2
     "@wry/equality": ^0.2.0
     fast-json-stable-stringify: ^2.0.0
     graphql-tag: ^2.11.0
     hoist-non-react-statics: ^3.3.2
-    optimism: ^0.12.1
+    optimism: ^0.13.0
     prop-types: ^15.7.2
-    symbol-observable: ^1.2.0
-    terser: ^5.2.0
+    symbol-observable: ^2.0.0
     ts-invariant: ^0.4.4
     tslib: ^1.10.0
     zen-observable: ^0.8.14
@@ -57,21 +57,23 @@ __metadata:
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: 2d28f17f333a600722b36d3998380e486d8713af6a1ee6e944f2a826649965542b8b36cf9031123633c07b46780d5193536cb2abc3c28a61c3032ed86ed44894
+    subscriptions-transport-ws:
+      optional: true
+  checksum: 0dc20d1c452cb6a8411b034d91d8fd34d242fd5e9493b68aaf80b0979a46f9ef6bf2668a5b30b81247171792a0426c716dcaecc094bb78592fef5451769eb4e7
   languageName: node
   linkType: hard
 
-"@apollo/federation@npm:0.20.0":
-  version: 0.20.0
-  resolution: "@apollo/federation@npm:0.20.0"
+"@apollo/federation@npm:0.20.2":
+  version: 0.20.2
+  resolution: "@apollo/federation@npm:0.20.2"
   dependencies:
-    apollo-graphql: ^0.5.0
+    apollo-graphql: ^0.6.0
     apollo-server-env: ^2.4.5
     core-js: ^3.4.0
     lodash.xorby: ^4.7.0
   peerDependencies:
     graphql: ^14.5.0 || ^15.0.0
-  checksum: 3d9997886138b395b60af83acdc871371031dcd8e8a4a13e420c5cab6028b2f916c48eb9447a0d007e800d975c526ac0715d7f5f479ba9d2542d2cb3240b413d
+  checksum: 00038c0e1d17d9c1ebefdc790c5c42d53c4cc4d4c6df2a05376be3558deb36cac2a07658db9ccd23582c8c706aeb2fcd7861f60fe99c44975874fefb0c1efbfb
   languageName: node
   linkType: hard
 
@@ -289,14 +291,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/generator@npm:7.11.4":
-  version: 7.11.4
-  resolution: "@babel/generator@npm:7.11.4"
+"@babel/generator@npm:7.11.6":
+  version: 7.11.6
+  resolution: "@babel/generator@npm:7.11.6"
   dependencies:
-    "@babel/types": ^7.11.0
+    "@babel/types": ^7.11.5
     jsesc: ^2.5.1
     source-map: ^0.5.0
-  checksum: 1244facf6e03ea120ee6f7520eb7e7347ef97a3ece7ccf5d3efd5a70e6c4f85c67d7e8b9dc533ee071c95d91fe0ff8c1b9cf1a59447f4bc1caddcace64e77dfb
+  checksum: 734bd60e018deaf7712c111bb5092d0382d3c217399569f1137f0100f672bcc1a086ae3a34efa0d604951ba9070f9bf554a4690c6bfe39123b05b89a4444e9c7
   languageName: node
   linkType: hard
 
@@ -4011,6 +4013,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@graphql-typed-document-node/core@npm:^3.0.0":
+  version: 3.1.0
+  resolution: "@graphql-typed-document-node/core@npm:3.1.0"
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+  checksum: f1c90f749b516ad67aa1eaeca1fdbe915ed1737464c6f99fb8571e301ade486587711b7bbdda4994068fd652992de7ed03538c7b6e585194edfa25feedf73e04
+  languageName: node
+  linkType: hard
+
 "@hapi/address@npm:2.x.x":
   version: 2.1.4
   resolution: "@hapi/address@npm:2.1.4"
@@ -7686,71 +7697,71 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apollo-codegen-core@npm:^0.37.9":
-  version: 0.37.9
-  resolution: "apollo-codegen-core@npm:0.37.9"
+"apollo-codegen-core@npm:^0.38.0":
+  version: 0.38.0
+  resolution: "apollo-codegen-core@npm:0.38.0"
   dependencies:
-    "@babel/generator": 7.11.4
+    "@babel/generator": 7.11.6
     "@babel/parser": ^7.1.3
     "@babel/types": 7.10.4
     apollo-env: ^0.6.5
-    apollo-language-server: ^1.23.4
+    apollo-language-server: ^1.24.0
     ast-types: ^0.14.0
     common-tags: ^1.5.1
     recast: ^0.20.0
-  checksum: 58ff2d8c40f12939dbda907c0ba9162fd1016388485d6df00beca1885906b5b8500cc71b25839813b046a34d3abe313079fdf6b0417ec5b42abe626f583f74de
+  checksum: 5f893ea0b04293a4595fa1ade9c0bee6520eaf4164bfe507ca66d6a41aa01183bf10d4fa9f28fa44a079e967d9da249a4c36e6ce24f851745b19e2028c3707b3
   languageName: node
   linkType: hard
 
-"apollo-codegen-flow@npm:^0.35.9":
-  version: 0.35.9
-  resolution: "apollo-codegen-flow@npm:0.35.9"
+"apollo-codegen-flow@npm:^0.36.0":
+  version: 0.36.0
+  resolution: "apollo-codegen-flow@npm:0.36.0"
   dependencies:
-    "@babel/generator": 7.11.4
+    "@babel/generator": 7.11.6
     "@babel/types": 7.10.4
-    apollo-codegen-core: ^0.37.9
+    apollo-codegen-core: ^0.38.0
     change-case: ^4.0.0
     common-tags: ^1.5.1
     inflected: ^2.0.3
-  checksum: 8b5a36795517b31f3b52213754e721452d5959a2728cfe5d055f3f30fe6d93c37d28d24a3838bff20ab2e9e838dbd65b6cd2a5ce0e562f1171d9e688c16faeb7
+  checksum: 5e7096ec8c42a0ccb6fbcc4541659d237c7e0cc57e221d6fee90ee61f4842f0e1bb1f70abd78005c358da90a7413957b7387f7eee6dea42e660e9a7fe6f3b3b3
   languageName: node
   linkType: hard
 
-"apollo-codegen-scala@npm:^0.36.9":
-  version: 0.36.9
-  resolution: "apollo-codegen-scala@npm:0.36.9"
+"apollo-codegen-scala@npm:^0.37.0":
+  version: 0.37.0
+  resolution: "apollo-codegen-scala@npm:0.37.0"
   dependencies:
-    apollo-codegen-core: ^0.37.9
+    apollo-codegen-core: ^0.38.0
     change-case: ^4.0.0
     common-tags: ^1.5.1
     inflected: ^2.0.3
-  checksum: ce796be9fab4fd9e9c25dc07ddddc4751f214d353afb0fc33c79f6367509fd92a59983b22948206063942ffdbc41ae2c70c584acfc79965e8066296d1222f747
+  checksum: d0d11c498e20e6ef9fa4959bad3e69df23f27f28dc3042f2061e7b0932bf070cbe768921b6b6a5e749132ed487ac5eba5c3928c4447b779dcedbcb72e465b46d
   languageName: node
   linkType: hard
 
-"apollo-codegen-swift@npm:^0.37.9":
-  version: 0.37.9
-  resolution: "apollo-codegen-swift@npm:0.37.9"
+"apollo-codegen-swift@npm:^0.38.0":
+  version: 0.38.0
+  resolution: "apollo-codegen-swift@npm:0.38.0"
   dependencies:
-    apollo-codegen-core: ^0.37.9
+    apollo-codegen-core: ^0.38.0
     change-case: ^4.0.0
     common-tags: ^1.5.1
     inflected: ^2.0.3
-  checksum: c13e90d75736c9e93589b02b39c2ab6a90f7252cbd51cefec8b365e55ce4ac3574b3e7502305c5e929698a976fac341884e72ebb2ee3aa19a1045cd94b1e4842
+  checksum: 4738229911bade5d1765e1f8353ab56283bde8bbdd91248d21dbcf1fd9bd51e22313d210984e6cde9652b271a3064562250eb732520f21febe4797a9f459fb3e
   languageName: node
   linkType: hard
 
-"apollo-codegen-typescript@npm:^0.37.9":
-  version: 0.37.9
-  resolution: "apollo-codegen-typescript@npm:0.37.9"
+"apollo-codegen-typescript@npm:^0.38.0":
+  version: 0.38.0
+  resolution: "apollo-codegen-typescript@npm:0.38.0"
   dependencies:
-    "@babel/generator": 7.11.4
+    "@babel/generator": 7.11.6
     "@babel/types": 7.10.4
-    apollo-codegen-core: ^0.37.9
+    apollo-codegen-core: ^0.38.0
     change-case: ^4.0.0
     common-tags: ^1.5.1
     inflected: ^2.0.3
-  checksum: 35116e52624728c410609e6ea70c05156e4d71aba1466b5ffcc5378fe1a6073a5043f13c546c0fe5a2e8dfbeb3d567ff135d8d9f407561776e14c864fcb55d7d
+  checksum: 48f7497e677af8ffca66114e0938d035b4c77da4c1a85a26fffebf6e2b6e4653ea6a231abd391a877abe52462ee87d300b7b2e21e0b57d667de8e5f5c419d17f
   languageName: node
   linkType: hard
 
@@ -7776,18 +7787,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apollo-graphql@npm:^0.5.0":
-  version: 0.5.0
-  resolution: "apollo-graphql@npm:0.5.0"
-  dependencies:
-    apollo-env: ^0.6.5
-    lodash.sortby: ^4.7.0
-  peerDependencies:
-    graphql: ^14.2.1 || ^15.0.0
-  checksum: 8a72967d7b5fc8f6edd613677c9a7f9e195cf3e07bd49f7485ccdb20292ddcc3d4caa365b1d8d491f104962fdad1d180c2c77888824b53bb5c6218eb9d54dd70
-  languageName: node
-  linkType: hard
-
 "apollo-graphql@npm:^0.6.0":
   version: 0.6.0
   resolution: "apollo-graphql@npm:0.6.0"
@@ -7800,11 +7799,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apollo-language-server@npm:^1.23.4":
-  version: 1.23.4
-  resolution: "apollo-language-server@npm:1.23.4"
+"apollo-language-server@npm:^1.24.0":
+  version: 1.24.0
+  resolution: "apollo-language-server@npm:1.24.0"
   dependencies:
-    "@apollo/federation": 0.20.0
+    "@apollo/federation": 0.20.2
     "@apollographql/apollo-tools": ^0.4.8
     "@apollographql/graphql-language-service-interface": ^2.0.2
     "@endemolshinegroup/cosmiconfig-typescript-loader": ^1.0.0
@@ -7826,10 +7825,10 @@ __metadata:
     lodash.debounce: ^4.0.8
     lodash.merge: ^4.6.1
     minimatch: ^3.0.4
-    moment: 2.27.0
+    moment: 2.28.0
     vscode-languageserver: ^5.1.0
     vscode-uri: 1.0.6
-  checksum: 6cea9bfbe235e8a520a9e0dce12f8b752db5c913ac6d8e56c70365105e0352066cc3fcd711949bca7f888d962a3d92d2e8473c0fb5b39a23b2e15128f9025e34
+  checksum: 37e6a0243bf93cb5130e76a1e59aabcfd663e6be2dad1eb3d6f42f623e3440b593f27efb19212a08198af5562b1f78882fb5e3c5e66dd496369d32a4dbcb194e
   languageName: node
   linkType: hard
 
@@ -7936,9 +7935,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apollo@npm:2.30.3":
-  version: 2.30.3
-  resolution: "apollo@npm:2.30.3"
+"apollo@npm:2.31.0":
+  version: 2.31.0
+  resolution: "apollo@npm:2.31.0"
   dependencies:
     "@apollographql/apollo-tools": ^0.4.8
     "@oclif/command": 1.8.0
@@ -7949,21 +7948,21 @@ __metadata:
     "@oclif/plugin-not-found": 1.2.4
     "@oclif/plugin-plugins": 1.9.0
     "@oclif/plugin-warn-if-update-available": 1.7.0
-    apollo-codegen-core: ^0.37.9
-    apollo-codegen-flow: ^0.35.9
-    apollo-codegen-scala: ^0.36.9
-    apollo-codegen-swift: ^0.37.9
-    apollo-codegen-typescript: ^0.37.9
+    apollo-codegen-core: ^0.38.0
+    apollo-codegen-flow: ^0.36.0
+    apollo-codegen-scala: ^0.37.0
+    apollo-codegen-swift: ^0.38.0
+    apollo-codegen-typescript: ^0.38.0
     apollo-env: ^0.6.5
     apollo-graphql: ^0.6.0
-    apollo-language-server: ^1.23.4
+    apollo-language-server: ^1.24.0
     chalk: 2.4.2
-    cli-ux: 5.4.10
+    cli-ux: 5.5.0
     env-ci: 3.2.2
     gaze: 1.1.3
     git-parse: 1.0.4
-    git-rev-sync: 2.0.0
-    git-url-parse: 11.1.3
+    git-rev-sync: 2.1.0
+    git-url-parse: 11.2.0
     glob: 7.1.5
     graphql: 14.0.2 - 14.2.0 || ^14.3.1 || ^15.0.0
     graphql-tag: 2.11.0
@@ -7971,14 +7970,14 @@ __metadata:
     lodash.identity: 3.0.0
     lodash.pickby: 4.6.0
     mkdirp: 1.0.4
-    moment: 2.27.0
+    moment: 2.28.0
     strip-ansi: 5.2.0
     table: 5.4.6
     tty: 1.0.1
     vscode-uri: 1.0.6
   bin:
     apollo: bin/run
-  checksum: 4b7f8f924b57c4e90c2781910eeb07b05c0ce0a23935a37527301138d45a23e7c230669bf3dbae84faeda7448b0dcdfdd722844d87d03bf12c323475bafe813a
+  checksum: b1a2f9d1f7c9fbd820238546210edee5ccc193ca6343f2566910b6685b6e144b5a4e7e6029d64da66acb65b53c9a3f14f960bbfc000308f30dc79898a85ac600
   languageName: node
   linkType: hard
 
@@ -10188,9 +10187,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-ux@npm:5.4.10":
-  version: 5.4.10
-  resolution: "cli-ux@npm:5.4.10"
+"cli-ux@npm:5.5.0":
+  version: 5.5.0
+  resolution: "cli-ux@npm:5.5.0"
   dependencies:
     "@oclif/command": ^1.6.0
     "@oclif/errors": ^1.2.1
@@ -10218,7 +10217,7 @@ __metadata:
     supports-color: ^7.1.0
     supports-hyperlinks: ^2.1.0
     tslib: ^2.0.0
-  checksum: 72d68fa243af26b62a2c889cb0d1c6c290a7abf43d9bf4c4d88d0f455b19818e99b93f9da3628551222daefe278007866057008d1303de7b823472ec3c60bc29
+  checksum: 319e308991bbfdc0592131ae5652b3a5f1915a6a94d62165e9dfb8ef796e172775cd560c9e0dc0b67671ee5dbd67004fcd006b0f7b8d9815caa2b89ba4ad9dba
   languageName: node
   linkType: hard
 
@@ -14212,14 +14211,14 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"git-rev-sync@npm:2.0.0":
-  version: 2.0.0
-  resolution: "git-rev-sync@npm:2.0.0"
+"git-rev-sync@npm:2.1.0":
+  version: 2.1.0
+  resolution: "git-rev-sync@npm:2.1.0"
   dependencies:
     escape-string-regexp: 1.0.5
     graceful-fs: 4.1.15
-    shelljs: 0.7.7
-  checksum: 94a66bf7956cafaf9b5cdf41065b34d90e6aabb003cde8a5e8521da4fd2408a9cfd41d1bd4fd6a2d806f7ae22f1dce1d83078a78aeaa24b69d6eb642650da8bd
+    shelljs: 0.8.4
+  checksum: 8662f750908e67e051414648c6577aba7851a678da426ca3d9de8188cae6141168aa5209c724022dfe9f977ae643cfc8cb633dc394f46704ab1a1cde7df3dfc3
   languageName: node
   linkType: hard
 
@@ -14233,12 +14232,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"git-url-parse@npm:11.1.3":
-  version: 11.1.3
-  resolution: "git-url-parse@npm:11.1.3"
+"git-url-parse@npm:11.2.0":
+  version: 11.2.0
+  resolution: "git-url-parse@npm:11.2.0"
   dependencies:
     git-up: ^4.0.0
-  checksum: c9f06eeb3fc4a5a89e1045fb9d26be314863f5025d7c6ccbd6aa3d8c6ddcb6fa43e7f1f67d05fb4cfaa0a89fd7c54a65bcd55098f474304ac7708648a9b848af
+  checksum: e9919fd1240917f74241a60b571a93e748a9e24648caf96f7b4183bbf44ff7de133a3554e1c3fda6a23e5b3b12ea2316e0f692c03e12ee590cae0a05ebcd5b66
   languageName: node
   linkType: hard
 
@@ -18658,10 +18657,10 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"moment@npm:2.27.0, moment@npm:^2.22.1":
-  version: 2.27.0
-  resolution: "moment@npm:2.27.0"
-  checksum: 72d9a7d8dba59e3d538440cdc0b59fa895b123361e370be231896478aaf157a484355ce32bd8daf6f731d6d1636d3a67ecb67531e536e093ca18b43e0cbae194
+"moment@npm:2.28.0":
+  version: 2.28.0
+  resolution: "moment@npm:2.28.0"
+  checksum: f239dd93cec0560eb75467d987b6117cc074cfbef086c8e0e01aa93f4aff198ee1a3d13166bb01397542dced6b1b608f2bff95b7ded209c46b0593afacb2d916
   languageName: node
   linkType: hard
 
@@ -18669,6 +18668,13 @@ fsevents@^1.2.7:
   version: 2.24.0
   resolution: "moment@npm:2.24.0"
   checksum: 983617bc51c8121a88d9530671fb9e5dc2c71d67ba5bf1b16ebef25b51bd3d1291f17735ac33e8604f4984a275561dfe0fb883664eceacf8f67291ffd26acee9
+  languageName: node
+  linkType: hard
+
+"moment@npm:^2.22.1":
+  version: 2.27.0
+  resolution: "moment@npm:2.27.0"
+  checksum: 72d9a7d8dba59e3d538440cdc0b59fa895b123361e370be231896478aaf157a484355ce32bd8daf6f731d6d1636d3a67ecb67531e536e093ca18b43e0cbae194
   languageName: node
   linkType: hard
 
@@ -19485,12 +19491,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"optimism@npm:^0.12.1":
-  version: 0.12.1
-  resolution: "optimism@npm:0.12.1"
+"optimism@npm:^0.13.0":
+  version: 0.13.0
+  resolution: "optimism@npm:0.13.0"
   dependencies:
     "@wry/context": ^0.5.2
-  checksum: 3e2a62ca68bd766087b814782ec174f49863b8419af1db5ac6325803041799bd9c04e288ec1ec37f05d82072f5ae0194d0df095fb169eb639fee03f3986be868
+  checksum: ca8946d38954b87bca7654f2ce132162e1941a19056be3c2871067498e0f9e65a1fcad600e5b04af3cce0841fbb3eaa160917d7c40d19f1234d6d7e4e58cb8f2
   languageName: node
   linkType: hard
 
@@ -22904,7 +22910,7 @@ resolve@^1.18.1:
   version: 0.0.0-use.local
   resolution: "rest-countries@workspace:."
   dependencies:
-    "@apollo/client": 3.1.4
+    "@apollo/client": 3.2.5
     "@babel/core": 7.12.3
     "@graphql-codegen/cli": 1.19.0
     "@graphql-codegen/introspection": 1.18.0
@@ -22936,7 +22942,7 @@ resolve@^1.18.1:
     "@typescript-eslint/eslint-plugin": 4.6.0
     "@typescript-eslint/parser": 4.6.0
     "@yarnpkg/pnpify": 2.3.3
-    apollo: 2.30.3
+    apollo: 2.31.0
     babel-loader: 8.1.0
     babel-plugin-macros: 2.8.0
     babel-plugin-styled-components: 1.11.1
@@ -23595,20 +23601,7 @@ resolve@^1.18.1:
   languageName: node
   linkType: hard
 
-"shelljs@npm:0.7.7":
-  version: 0.7.7
-  resolution: "shelljs@npm:0.7.7"
-  dependencies:
-    glob: ^7.0.0
-    interpret: ^1.0.0
-    rechoir: ^0.6.2
-  bin:
-    shjs: ./bin/shjs
-  checksum: 55bbab07e88bedba786b2c4ca1955678d8e24cfe025166ab1410551001ca0b9d9a101c865a151a6784132b180e213545387271d7e07af6e0cc06457b307e9aa0
-  languageName: node
-  linkType: hard
-
-"shelljs@npm:^0.8.3":
+"shelljs@npm:0.8.4, shelljs@npm:^0.8.3":
   version: 0.8.4
   resolution: "shelljs@npm:0.8.4"
   dependencies:
@@ -24794,10 +24787,17 @@ resolve@^1.18.1:
   languageName: node
   linkType: hard
 
-"symbol-observable@npm:^1.0.4, symbol-observable@npm:^1.1.0, symbol-observable@npm:^1.2.0":
+"symbol-observable@npm:^1.0.4, symbol-observable@npm:^1.1.0":
   version: 1.2.0
   resolution: "symbol-observable@npm:1.2.0"
   checksum: 268834a1d4cba19d40f367e5c2755f612969c8418e43a3be17408e392802a667f8bb542893440d58a080a8ea8da05ea98e27e472b9f4ff6fbda78a21a1a41c53
+  languageName: node
+  linkType: hard
+
+"symbol-observable@npm:^2.0.0":
+  version: 2.0.3
+  resolution: "symbol-observable@npm:2.0.3"
+  checksum: c022177891e0aa3169bbaaed68d928ff7a2b5f5b1b2bf655b99804ecfabe280a6f1042dd3bda609475e637c57141d39b33e692b6f6b5fdb29ce7f61cf77be57f
   languageName: node
   linkType: hard
 
@@ -25003,19 +25003,6 @@ resolve@^1.18.1:
   bin:
     terser: bin/terser
   checksum: d7ab95898b40e2aa3513b02fc74f520f8e65072a19d7f687b8224af01512ad4d2227bc1375c22cd050f67eb1ca3e440b4f09652c5f48f13ed9ee81c0c26015a3
-  languageName: node
-  linkType: hard
-
-"terser@npm:^5.2.0":
-  version: 5.2.1
-  resolution: "terser@npm:5.2.1"
-  dependencies:
-    commander: ^2.20.0
-    source-map: ~0.6.1
-    source-map-support: ~0.5.12
-  bin:
-    terser: bin/terser
-  checksum: eba43b091dbc49eeb5201a141e6c8a09b3ff892dea6f5ce76ee2ea51343f26683d6481997fe30ba12ae3758dd6dc27088c74f58784243dc539b520ce8e382a0a
   languageName: node
   linkType: hard
 
