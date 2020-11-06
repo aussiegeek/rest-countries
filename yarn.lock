@@ -23449,7 +23449,7 @@ fsevents@~2.1.2:
     react-scripts: 4.0.0
     react-test-renderer: 16.14.0
     sort-package-json: 1.46.1
-    styled-components: 5.2.0
+    styled-components: 5.2.1
     stylelint: 13.7.2
     stylelint-color-format: 1.1.0
     stylelint-config-standard: 20.0.0
@@ -25043,9 +25043,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"styled-components@npm:5.2.0":
-  version: 5.2.0
-  resolution: "styled-components@npm:5.2.0"
+"styled-components@npm:5.2.1":
+  version: 5.2.1
+  resolution: "styled-components@npm:5.2.1"
   dependencies:
     "@babel/helper-module-imports": ^7.0.0
     "@babel/traverse": ^7.4.5
@@ -25061,7 +25061,7 @@ fsevents@~2.1.2:
     react: ">= 16.8.0"
     react-dom: ">= 16.8.0"
     react-is: ">= 16.8.0"
-  checksum: 960d40732c26c49539b343a805687cea61a732e47a108f560f505b8a67f86107410b3d9d88292da249ed55cab781ba1a34950a7e548c287a13615149a37e2fe7
+  checksum: c27911be08f2c6212d1f381d154cab5204c63b34d1b9ba56388b19654497a523ff466884fbf8914637c046ae8862387b0fc63f9ead67e1a8ab3a8af70b0d8089
   languageName: node
   linkType: hard
 
