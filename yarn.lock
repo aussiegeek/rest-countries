@@ -3246,7 +3246,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.10.3":
+"@babel/runtime@npm:^7.10.2":
   version: 7.10.5
   resolution: "@babel/runtime@npm:7.10.5"
   dependencies:
@@ -3264,7 +3264,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.5":
+"@babel/runtime@npm:^7.12.5":
   version: 7.12.5
   resolution: "@babel/runtime@npm:7.12.5"
   dependencies:
@@ -4764,19 +4764,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/types@npm:^26.3.0":
-  version: 26.3.0
-  resolution: "@jest/types@npm:26.3.0"
-  dependencies:
-    "@types/istanbul-lib-coverage": ^2.0.0
-    "@types/istanbul-reports": ^3.0.0
-    "@types/node": "*"
-    "@types/yargs": ^15.0.0
-    chalk: ^4.0.0
-  checksum: 151547a8fd46cad58a52fdeedec6a1102c8946bed0f48ae80e12329bcd58b54fd239f43c953f6b076d57abe8ffab25ecda6acc837409e4ae0bcab247847da976
-  languageName: node
-  linkType: hard
-
 "@jest/types@npm:^26.6.0":
   version: 26.6.0
   resolution: "@jest/types@npm:26.6.0"
@@ -6172,7 +6159,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:7.28.1":
+"@testing-library/dom@npm:7.28.1, @testing-library/dom@npm:^7.28.1":
   version: 7.28.1
   resolution: "@testing-library/dom@npm:7.28.1"
   dependencies:
@@ -6185,22 +6172,6 @@ __metadata:
     lz-string: ^1.4.4
     pretty-format: ^26.6.2
   checksum: 1ff88e7637de3d80862091b5d55a0ca383a6b0430b4ffbd486a0b7e3fb190e1535244a7bf02c61dac9b556003431663e49ee4224b820630a14b5edf62cb93c6b
-  languageName: node
-  linkType: hard
-
-"@testing-library/dom@npm:^7.26.4":
-  version: 7.26.5
-  resolution: "@testing-library/dom@npm:7.26.5"
-  dependencies:
-    "@babel/code-frame": ^7.10.4
-    "@babel/runtime": ^7.10.3
-    "@types/aria-query": ^4.2.0
-    aria-query: ^4.2.2
-    chalk: ^4.1.0
-    dom-accessibility-api: ^0.5.1
-    lz-string: ^1.4.4
-    pretty-format: ^26.4.2
-  checksum: 28805f72d951831cd5904c6332292152679269c9196b9b302319168f6ec2555ae7b7a1f013cc7b79c1ab24235a84624ff868fa6cdf7e2cc77bcd8b78af0d7004
   languageName: node
   linkType: hard
 
@@ -6220,16 +6191,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:11.1.1":
-  version: 11.1.1
-  resolution: "@testing-library/react@npm:11.1.1"
+"@testing-library/react@npm:11.2.2":
+  version: 11.2.2
+  resolution: "@testing-library/react@npm:11.2.2"
   dependencies:
-    "@babel/runtime": ^7.12.1
-    "@testing-library/dom": ^7.26.4
+    "@babel/runtime": ^7.12.5
+    "@testing-library/dom": ^7.28.1
   peerDependencies:
     react: "*"
     react-dom: "*"
-  checksum: f09d56355dd86c4bae4ae8a1c7abe5270d6e6ccf9db6089f8efa1529e11272a2073cf19bd801f8f6f2c7ae2b3aeb7ba9c4b44aa1cdb2c76ce6dc3f1c46fc795e
+  checksum: b2061c140201ab179a8cc3294ebc58f9a7ea5ffdb83ee246d59cb0ecfe4c2c99cdeedef66c280a52773453477f03866388ba7b36d2b144a3e646250c3f8efbc9
   languageName: node
   linkType: hard
 
@@ -12367,13 +12338,6 @@ __metadata:
   dependencies:
     esutils: ^2.0.2
   checksum: 2eae469bd2889ceee9892083a67340b3622568fe5290edce620e5d5ddab23d644b2a780e9a7c68ad9c8a62716a70c5e484402ac93a398fa78b54b7505592aa7f
-  languageName: node
-  linkType: hard
-
-"dom-accessibility-api@npm:^0.5.1":
-  version: 0.5.2
-  resolution: "dom-accessibility-api@npm:0.5.2"
-  checksum: 247b9183d20a659890b9d7dd5b92a341c8a9ba8b0232ec6f3f34859b025de6fd05da8011f65b019fdfa19d0f7ff1bf3e610a13c3c38cd2649e20b3980ed834ba
   languageName: node
   linkType: hard
 
@@ -21859,18 +21823,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^26.4.2":
-  version: 26.4.2
-  resolution: "pretty-format@npm:26.4.2"
-  dependencies:
-    "@jest/types": ^26.3.0
-    ansi-regex: ^5.0.0
-    ansi-styles: ^4.0.0
-    react-is: ^16.12.0
-  checksum: 06cdf6684cce00fd7df63bac8f29e47bcfaab1a68d41c6e7905c9fa78bfe31c52726b36891b2a3991a1cadab710de8818661464128367332183e3f0c1f86e640
-  languageName: node
-  linkType: hard
-
 "pretty-format@npm:^26.6.1":
   version: 26.6.1
   resolution: "pretty-format@npm:26.6.1"
@@ -23543,7 +23495,7 @@ fsevents@~2.1.2:
     "@storybook/react": 6.0.28
     "@testing-library/dom": 7.28.1
     "@testing-library/jest-dom": 5.11.6
-    "@testing-library/react": 11.1.1
+    "@testing-library/react": 11.2.2
     "@testing-library/user-event": 12.2.0
     "@types/faker": 5.1.4
     "@types/jest": 26.0.15
