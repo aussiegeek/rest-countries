@@ -5789,22 +5789,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/preset-create-react-app@npm:3.1.4":
-  version: 3.1.4
-  resolution: "@storybook/preset-create-react-app@npm:3.1.4"
+"@storybook/preset-create-react-app@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@storybook/preset-create-react-app@npm:3.1.5"
   dependencies:
     "@types/babel__core": ^7.1.7
     "@types/webpack": ^4.41.13
     babel-plugin-react-docgen: ^4.1.0
     pnp-webpack-plugin: ^1.6.4
-    react-docgen-typescript-plugin: ^0.5.0
+    react-docgen-typescript-plugin: ^0.6.2
     semver: ^7.3.2
   peerDependencies:
     "@babel/core": "*"
     "@storybook/node-logger": "*"
     "@storybook/react": ">=5.2"
     react-scripts: ">=3.0.0"
-  checksum: 0991e0944c416a8a1a684c3210b33de2bfaf9aea0564d12bd3fbffc412b382069367480bf5ef4c09157cf831a4f170ef20b15c68b8c5174d2280e7db21ef82f6
+  checksum: d029c14831f1f784c18a71ab65cde0a9733f6da4cc9a3d444d2b525763874deb00e657de3af6d33a69c6b5bfe3f8d171335d4db340b4f73aee7703d2c3f41dde
   languageName: node
   linkType: hard
 
@@ -22369,7 +22369,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-docgen-typescript-plugin@npm:^0.5.0, react-docgen-typescript-plugin@npm:^0.5.2":
+"react-docgen-typescript-plugin@npm:^0.5.2":
   version: 0.5.2
   resolution: "react-docgen-typescript-plugin@npm:0.5.2"
   dependencies:
@@ -22385,12 +22385,36 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"react-docgen-typescript-plugin@npm:^0.6.2":
+  version: 0.6.3
+  resolution: "react-docgen-typescript-plugin@npm:0.6.3"
+  dependencies:
+    debug: ^4.1.1
+    endent: ^2.0.1
+    micromatch: ^4.0.2
+    react-docgen-typescript: ^1.20.5
+    tslib: ^2.0.0
+  peerDependencies:
+    typescript: ">= 3.x"
+  checksum: fa970d8ba7dca4739c2ad5d23c84b3e23174908761840f4ed87e182c80d8e0ca4c04260e7fa84e911995d8d3afc1e47fdb7012845adfc9cf0ee6716719f088cf
+  languageName: node
+  linkType: hard
+
 "react-docgen-typescript@npm:^1.15.0, react-docgen-typescript@npm:^1.20.1":
   version: 1.20.4
   resolution: "react-docgen-typescript@npm:1.20.4"
   peerDependencies:
     typescript: ">= 3.x"
   checksum: 0db602095a9339e9ced2d203b757cd148e3c66b8e3acb8c26f001c62359a28472ccdea1dcffa9fd9a4c2f5551512f2a5287b8c2067eb6ceb1a3d3577f02ffa9f
+  languageName: node
+  linkType: hard
+
+"react-docgen-typescript@npm:^1.20.5":
+  version: 1.20.5
+  resolution: "react-docgen-typescript@npm:1.20.5"
+  peerDependencies:
+    typescript: ">= 3.x"
+  checksum: 10e55a318345d6739caee4511c0701d4f3203b2c8e8bda8f4adee0f5e9e032b8f0bdc77d8fbe2c440badd02f5cac8832e34dd01d0a8e1fbd86ed357719020edc
   languageName: node
   linkType: hard
 
@@ -23467,7 +23491,7 @@ fsevents@~2.1.2:
     "@storybook/addon-links": 6.0.27
     "@storybook/addon-viewport": 6.0.27
     "@storybook/addons": 6.0.27
-    "@storybook/preset-create-react-app": 3.1.4
+    "@storybook/preset-create-react-app": 3.1.5
     "@storybook/react": 6.0.28
     "@testing-library/dom": 7.26.5
     "@testing-library/jest-dom": 5.11.5
