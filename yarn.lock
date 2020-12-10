@@ -6204,14 +6204,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:12.2.0":
-  version: 12.2.0
-  resolution: "@testing-library/user-event@npm:12.2.0"
+"@testing-library/user-event@npm:12.5.0":
+  version: 12.5.0
+  resolution: "@testing-library/user-event@npm:12.5.0"
   dependencies:
     "@babel/runtime": ^7.10.2
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
-  checksum: 012a3d24c7bbc52d1e6f68f3d7401f61b7a63422e74819f26096b746994ef88962d0698e224bb39966e988ed81d9050e24dab004d60ff91173736e667e2ae9c3
+  checksum: e8af3fc200e53dfa93111f3341c4ccffc3f85e6024b98551b1feae5b98d69e9252fe452086516916367330f0e34de5320dc4456f39bf0730c09d85451654616d
   languageName: node
   linkType: hard
 
@@ -23496,7 +23496,7 @@ fsevents@~2.1.2:
     "@testing-library/dom": 7.28.1
     "@testing-library/jest-dom": 5.11.6
     "@testing-library/react": 11.2.2
-    "@testing-library/user-event": 12.2.0
+    "@testing-library/user-event": 12.5.0
     "@types/faker": 5.1.4
     "@types/jest": 26.0.15
     "@types/node": 12.19.3
