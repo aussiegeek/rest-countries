@@ -3264,7 +3264,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.12.5":
+"@babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.5":
   version: 7.12.5
   resolution: "@babel/runtime@npm:7.12.5"
   dependencies:
@@ -9127,13 +9127,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-require-context-hook@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "babel-plugin-require-context-hook@npm:1.0.0"
-  checksum: 9b938cfa288bff0e05e816736fb9a605c5104b97fd4fa4a60d0cbd2cb5f94129295f720093b0ec9f716cff3df0fd32c96dca0934c4ab80d19fa6ff32a85ed84f
-  languageName: node
-  linkType: hard
-
 "babel-plugin-styled-components@npm:1.11.1":
   version: 1.11.1
   resolution: "babel-plugin-styled-components@npm:1.11.1"
@@ -10063,7 +10056,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"camelcase-keys@npm:^6.1.1, camelcase-keys@npm:^6.2.2":
+"camelcase-keys@npm:^6.2.2":
   version: 6.2.2
   resolution: "camelcase-keys@npm:6.2.2"
   dependencies:
@@ -10412,20 +10405,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:5.3.0":
-  version: 5.3.0
-  resolution: "chromatic@npm:5.3.0"
+"chromatic@npm:5.4.0":
+  version: 5.4.0
+  resolution: "chromatic@npm:5.4.0"
   dependencies:
     "@actions/core": ^1.2.4
     "@actions/github": ^4.0.0
-    "@babel/preset-react": ^7.9.4
-    "@babel/runtime": ^7.9.2
+    "@babel/runtime": ^7.12.1
     "@chromaui/localtunnel": 2.0.1
     async-retry: ^1.3.1
-    babel-plugin-require-context-hook: ^1.0.0
     chalk: ^4.0.0
     cross-spawn: ^7.0.2
-    debug: ^4.1.1
+    debug: ^4.2.0
     dotenv: ^8.2.0
     env-ci: ^5.0.2
     esm: ^3.2.25
@@ -10433,33 +10424,31 @@ __metadata:
     fake-tag: ^2.0.0
     fs-extra: ^9.0.0
     jsonfile: ^6.0.1
-    junit-report-builder: 2.0.0
+    junit-report-builder: 2.1.0
     listr: 0.14.3
-    meow: ^6.1.0
+    meow: ^7.1.1
     node-ask: ^1.0.1
     node-fetch: ^2.6.0
     node-loggly-bulk: ^2.2.4
-    p-limit: 2.3.0
+    p-limit: 3.0.2
     picomatch: 2.2.2
     pkg-up: ^3.1.0
     pluralize: ^8.0.0
-    progress: ^2.0.3
     progress-stream: ^2.0.0
     semver: ^7.1.3
     slash: ^3.0.0
     strip-ansi: 6.0.0
-    tmp: ^0.1.0
-    tmp-promise: 2.1.1
+    tmp-promise: 3.0.2
     tree-kill: ^1.2.2
     ts-dedent: ^1.1.1
     util-deprecate: ^1.0.2
-    uuid: ^7.0.3
+    uuid: ^8.3.1
     yarn-or-npm: ^3.0.1
   bin:
     chroma: bin/register.js
     chromatic: bin/register.js
     chromatic-cli: bin/register.js
-  checksum: bc29c87b0fcf3729ef8b80ccc3c286b0ad59faaff99c5b55154adf1d68c2df70cdbfee3b4dd9c7d83cdb2c045b095c103c1a7a325539e81529bd2d792de49c36
+  checksum: 8a0ea05513f1e008d5b0eecd5967b204d3735964e51baa18f5f86db8406023b4c832a60cf3cf541bed099e2041a612d2bad5b2eba7e5cb82e01ae26664e9bd6b
   languageName: node
   linkType: hard
 
@@ -15098,7 +15087,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"hard-rejection@npm:^2.0.0, hard-rejection@npm:^2.1.0":
+"hard-rejection@npm:^2.1.0":
   version: 2.1.0
   resolution: "hard-rejection@npm:2.1.0"
   checksum: 27bc09d185ca8131356f0f3391ae5965c5ed8ec9eddf697d604e33c76eb995831e60ac636e5e5839587d0499f29719171c19d0af5fa12e9e7f7c0a1689e22b6f
@@ -17765,15 +17754,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"junit-report-builder@npm:2.0.0":
-  version: 2.0.0
-  resolution: "junit-report-builder@npm:2.0.0"
+"junit-report-builder@npm:2.1.0":
+  version: 2.1.0
+  resolution: "junit-report-builder@npm:2.1.0"
   dependencies:
     date-format: 0.0.2
     lodash: ^4.17.15
     make-dir: ^1.3.0
     xmlbuilder: ^10.0.0
-  checksum: a20c0908d76c26a91c1828dd0eea63e728fc1a9b919b3f2dc17ef16cc4ec74742077252e9a3b75ff1ea3dcd656667b85f1fd42061c1b3e86ebaeefa9147f038e
+  checksum: accf5ff79465bc06da4308faeb3b1385dfab0bd05265b6c79ee04701ad3fe695cf2f4dfd23b86774fe6df53b2de417b37cc5e645ee6338396cbfc6cb6576d36f
   languageName: node
   linkType: hard
 
@@ -18711,25 +18700,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"meow@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "meow@npm:6.1.0"
-  dependencies:
-    "@types/minimist": ^1.2.0
-    camelcase-keys: ^6.1.1
-    decamelize-keys: ^1.1.0
-    hard-rejection: ^2.0.0
-    minimist-options: ^4.0.1
-    normalize-package-data: ^2.5.0
-    read-pkg-up: ^7.0.0
-    redent: ^3.0.0
-    trim-newlines: ^3.0.0
-    type-fest: ^0.8.1
-    yargs-parser: ^18.1.1
-  checksum: 86de79a61b3bd5715087f82086f807e9ca1189eea49e34e24df89a1594850f328af1a4fab39e3822e3b82b27438156300b47fddad12d35a0b087feddc3dac965
-  languageName: node
-  linkType: hard
-
 "meow@npm:^7.1.1":
   version: 7.1.1
   resolution: "meow@npm:7.1.1"
@@ -18984,16 +18954,6 @@ fsevents@~2.1.2:
     is-plain-obj: ^1.1.0
     kind-of: ^6.0.3
   checksum: 51f1aba56f9c2c2986d85c98a29abec26c632019abd2966a151029cf2cf0903d81894781460e0d5755d4f899bb3884bc86fc9af36ab31469a38d82cf74f4f651
-  languageName: node
-  linkType: hard
-
-"minimist-options@npm:^4.0.1":
-  version: 4.0.2
-  resolution: "minimist-options@npm:4.0.2"
-  dependencies:
-    arrify: ^1.0.1
-    is-plain-obj: ^1.1.0
-  checksum: 07e8e0529e4b4f7055df1d40a49be115f862d513509cb3bd168e4a9a7a9476a2c3d43d81944078b6d7995ec897c58217a94b6b81f4ef68b136fba8a39f7a97cd
   languageName: node
   linkType: hard
 
@@ -20113,15 +20073,6 @@ fsevents@~2.1.2:
   version: 1.0.0
   resolution: "p-finally@npm:1.0.0"
   checksum: 01f49b2d9c67573b3a1cb253cd9e1ecf5c912b6ba5de8824118bbc8d647bfa6296820b5a536e91ec68a54395d4e1c58de9a381ded3b688074fb446a8fe351931
-  languageName: node
-  linkType: hard
-
-"p-limit@npm:2.3.0":
-  version: 2.3.0
-  resolution: "p-limit@npm:2.3.0"
-  dependencies:
-    p-try: ^2.0.0
-  checksum: 5f20492a25c5f93fca2930dbbf41fa1bee46ef70eaa6b49ad1f7b963f309e599bc40507e0a3a531eee4bcd10fec4dd4a63291d0e3b2d84ac97d7403d43d271a9
   languageName: node
   linkType: hard
 
@@ -21899,7 +21850,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"progress@npm:^2.0.0, progress@npm:^2.0.3":
+"progress@npm:^2.0.0":
   version: 2.0.3
   resolution: "progress@npm:2.0.3"
   checksum: c46ef5a1de4d527dfd32fe56a7df0c1c8b420a4c02617196813bf7f10ac7c2a929afc265d44fdd68f5c439a7e7cb3d70d569716c82d6b4148ec72089860a1312
@@ -22757,7 +22708,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"read-pkg-up@npm:^7.0.0, read-pkg-up@npm:^7.0.1":
+"read-pkg-up@npm:^7.0.1":
   version: 7.0.1
   resolution: "read-pkg-up@npm:7.0.1"
   dependencies:
@@ -23502,7 +23453,7 @@ fsevents@~2.1.2:
     babel-loader: 8.1.0
     babel-plugin-macros: 2.8.0
     babel-plugin-styled-components: 1.11.1
-    chromatic: 5.3.0
+    chromatic: 5.4.0
     eslint: 7.12.1
     eslint-config-airbnb-typescript: 12.0.0
     eslint-config-prettier: 6.15.0
@@ -25771,21 +25722,12 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"tmp-promise@npm:2.1.1":
-  version: 2.1.1
-  resolution: "tmp-promise@npm:2.1.1"
+"tmp-promise@npm:3.0.2":
+  version: 3.0.2
+  resolution: "tmp-promise@npm:3.0.2"
   dependencies:
-    tmp: 0.1.0
-  checksum: 795d20c8c6a62bef5c13388be0970fcfbc5f2ab841b5d1cb306d0218f3158f0be98892e9ed04f8d0806ea59de806514aa1901157ea39f7c947a7c88cd7fb3dcd
-  languageName: node
-  linkType: hard
-
-"tmp@npm:0.1.0, tmp@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "tmp@npm:0.1.0"
-  dependencies:
-    rimraf: ^2.6.3
-  checksum: b505e9f4f5e8076a1789fa1cec50b42220fdb90dec3e44ff0598d74701e340333ef7c28a55ed2d59b24112e2668e98e92852352ad4dc20352250a7be5cc1a973
+    tmp: ^0.2.0
+  checksum: dceb1616b2d97bcc20f84544aa6ad0cb02b975da1cf2336648ea2e5f32e3be14d5c54dfc2dfdeedbd7d077ac99d8889d005db2be29c7c8da5d7a9d9207bda013
   languageName: node
   linkType: hard
 
@@ -25795,6 +25737,15 @@ fsevents@~2.1.2:
   dependencies:
     os-tmpdir: ~1.0.2
   checksum: 77666ca424a78fcfcc27a6576f24f01aa1300b10d22e4f1808809e560777672dd2d4a112604ab2ad86ec7cafd24472b9ccc41373c2b5b83797f27e6aff06cbe5
+  languageName: node
+  linkType: hard
+
+"tmp@npm:^0.2.0":
+  version: 0.2.1
+  resolution: "tmp@npm:0.2.1"
+  dependencies:
+    rimraf: ^3.0.0
+  checksum: 13973825ff1c7aed3359bba97c146c860ebb5b1cbdca88387a2ff8bae704d2478b701cc3adc29b1461be292fed1e4ae56b378b6a0386bbab471ef32860e0a711
   languageName: node
   linkType: hard
 
@@ -26725,21 +26676,21 @@ typescript@3.9.7:
   languageName: node
   linkType: hard
 
-"uuid@npm:^7.0.3":
-  version: 7.0.3
-  resolution: "uuid@npm:7.0.3"
-  bin:
-    uuid: dist/bin/uuid
-  checksum: a56be8a5bbf2bae755d749d0693637274935b5ae250dfaaaf79241391cf1a7c142a202492196363ec62ec51a476e5e3fc4de2944d854abf2e9b35a33e0e31d4c
-  languageName: node
-  linkType: hard
-
 "uuid@npm:^8.0.0, uuid@npm:^8.3.0":
   version: 8.3.0
   resolution: "uuid@npm:8.3.0"
   bin:
     uuid: dist/bin/uuid
   checksum: a2bdb8a3eb80a53506e9657e7e1f70d7600562bf43fa010a645fd1deb7de1686df61c496c6f9826bac4be8db4d1ac1b976dd6fdf3bd083207eec1674507936fb
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^8.3.1":
+  version: 8.3.2
+  resolution: "uuid@npm:8.3.2"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: aed2bcef341f95635f308fea8831fb9038b18c485fe7e71feb89d2e05602dfecad0cb6f2246fae096d4da425cca6e8a71056f28abd97ad98cf770a2018853248
   languageName: node
   linkType: hard
 
