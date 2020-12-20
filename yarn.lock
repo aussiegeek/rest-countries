@@ -9020,6 +9020,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-macros@npm:3.0.1":
+  version: 3.0.1
+  resolution: "babel-plugin-macros@npm:3.0.1"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+    cosmiconfig: ^7.0.0
+    resolve: ^1.19.0
+  checksum: f1a523136365b5bfb23bfc05d3d0b91358adc854a3440d3ea6220b6427bf43d8ea25b7f01ade618af943005d82f449389d02446a4b097a87ccd7eeab14921e03
+  languageName: node
+  linkType: hard
+
 "babel-plugin-minify-builtins@npm:^0.5.0":
   version: 0.5.0
   resolution: "babel-plugin-minify-builtins@npm:0.5.0"
@@ -16530,6 +16541,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"is-core-module@npm:^2.1.0":
+  version: 2.2.0
+  resolution: "is-core-module@npm:2.2.0"
+  dependencies:
+    has: ^1.0.3
+  checksum: 2344744de98a3bc22e2bb30895f307d7889f09e963f9bcb1cc321788f508c8b463f75e0a9ca009eeeb8eb9465181b5c15f1ec9299a6bb6921cfbb2423892e0ba
+  languageName: node
+  linkType: hard
+
 "is-data-descriptor@npm:^0.1.4":
   version: 0.1.4
   resolution: "is-data-descriptor@npm:0.1.4"
@@ -23675,6 +23695,16 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+resolve@^1.19.0:
+  version: 1.19.0
+  resolution: "resolve@npm:1.19.0"
+  dependencies:
+    is-core-module: ^2.1.0
+    path-parse: ^1.0.6
+  checksum: 8b23c7fde1224898ffb9fec2a2295a44d1564981343bdbf5fd3769465658f6a6f6647bb7ea66dfb3c1291ca86046b0233be2edfcd8ca05b38886521e8869677c
+  languageName: node
+  linkType: hard
+
 "resolve@patch:resolve@1.18.1#builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#builtin<compat/resolve>, resolve@patch:resolve@^1.18.1#builtin<compat/resolve>":
   version: 1.18.1
   resolution: "resolve@patch:resolve@npm%3A1.18.1#builtin<compat/resolve>::version=1.18.1&hash=3388aa"
@@ -23700,6 +23730,16 @@ fsevents@~2.1.2:
   dependencies:
     path-parse: ^1.0.6
   checksum: 6588c8a8735d8b2a00cfee2a325538f325ae5e48653490882d3e8afe6124f25c25d60ec09864f30a03c4471a3201c9cfba0e14ca0f74f626ac4b5c8d2e42c2c2
+  languageName: node
+  linkType: hard
+
+"resolve@patch:resolve@^1.19.0#builtin<compat/resolve>":
+  version: 1.19.0
+  resolution: "resolve@patch:resolve@npm%3A1.19.0#builtin<compat/resolve>::version=1.19.0&hash=3388aa"
+  dependencies:
+    is-core-module: ^2.1.0
+    path-parse: ^1.0.6
+  checksum: 188d5167e8578a9af8d194faf382b8f3526aad5145391c24ecdc6246c6fc82c10fc66d6352267f8e93c5977c503d61803169c91b9e2ee36dd2de759915c9b673
   languageName: node
   linkType: hard
 
@@ -23759,7 +23799,7 @@ fsevents@~2.1.2:
     "@yarnpkg/pnpify": 2.4.0
     apollo: 2.31.1
     babel-loader: 8.1.0
-    babel-plugin-macros: 2.8.0
+    babel-plugin-macros: 3.0.1
     babel-plugin-styled-components: 1.11.1
     chromatic: 5.5.0
     eslint: 7.15.0
