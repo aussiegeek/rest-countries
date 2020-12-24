@@ -13525,9 +13525,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:7.15.0":
-  version: 7.15.0
-  resolution: "eslint@npm:7.15.0"
+"eslint@npm:7.16.0":
+  version: 7.16.0
+  resolution: "eslint@npm:7.16.0"
   dependencies:
     "@babel/code-frame": ^7.0.0
     "@eslint/eslintrc": ^0.2.2
@@ -13563,12 +13563,12 @@ __metadata:
     semver: ^7.2.1
     strip-ansi: ^6.0.0
     strip-json-comments: ^3.1.0
-    table: ^5.2.3
+    table: ^6.0.4
     text-table: ^0.2.0
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: e5b2d18d9869f7460858b4462ab45f65f5b43a7a3d94ffdbfdcaab4bcfd3d12af21cca70fde939b994f7cd6e5a71ef229a891f66916968521d9266ef50c996ef
+  checksum: facdebbce95f7812b026cae955f22863e0850584c8b4ab6daefa555f48b38a8b3d62c1857c0eeebe52218c49345853f516209b300c6747ea89d6f88ef495a56d
   languageName: node
   linkType: hard
 
@@ -23802,7 +23802,7 @@ resolve@^1.19.0:
     babel-plugin-macros: 3.0.1
     babel-plugin-styled-components: 1.11.1
     chromatic: 5.5.0
-    eslint: 7.15.0
+    eslint: 7.16.0
     eslint-config-airbnb-typescript: 12.0.0
     eslint-config-prettier: 6.15.0
     eslint-plugin-eslint-comments: 3.2.0
@@ -25781,7 +25781,7 @@ resolve@^1.19.0:
   languageName: node
   linkType: hard
 
-"table@npm:^6.0.3":
+"table@npm:^6.0.3, table@npm:^6.0.4":
   version: 6.0.4
   resolution: "table@npm:6.0.4"
   dependencies:
