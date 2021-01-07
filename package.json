@@ -89,7 +89,7 @@
     "apollo": "2.31.1",
     "babel-plugin-macros": "3.0.1",
     "chromatic": "5.5.0",
-    "eslint": "7.16.0",
+    "eslint": "7.17.0",
     "eslint-config-airbnb-typescript": "12.0.0",
     "eslint-config-prettier": "6.15.0",
     "eslint-plugin-eslint-comments": "3.2.0",
