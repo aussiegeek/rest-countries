@@ -4430,15 +4430,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/schema@npm:7.1.2":
-  version: 7.1.2
-  resolution: "@graphql-tools/schema@npm:7.1.2"
+"@graphql-tools/schema@npm:7.1.3":
+  version: 7.1.3
+  resolution: "@graphql-tools/schema@npm:7.1.3"
   dependencies:
     "@graphql-tools/utils": ^7.1.2
-    tslib: ~2.0.1
+    tslib: ~2.1.0
   peerDependencies:
     graphql: ^14.0.0 || ^15.0.0
-  checksum: 86b1a075fe226e9233efeddeb9229b89f166e210f2529f1f24833acc45ed9fe016ad7081fcf04d8f0489ad22d2ea3d80d0187231142db5994438808216877503
+  checksum: a0e0f9e5c746500702ed1316c6b97bb43ce171bb2fa865e7de38a5f958290094207172af4b9ba82dedf783ae42bcd7fd89b7d613affbe6717c40e758f04b77da
   languageName: node
   linkType: hard
 
@@ -23926,7 +23926,7 @@ resolve@^1.19.0:
     "@graphql-codegen/typescript-operations": 1.17.14
     "@graphql-codegen/typescript-react-apollo": 2.2.1
     "@graphql-tools/mock": 7.0.0
-    "@graphql-tools/schema": 7.1.2
+    "@graphql-tools/schema": 7.1.3
     "@reach/router": 1.3.4
     "@storybook/addon-actions": 6.1.15
     "@storybook/addon-links": 6.1.15
