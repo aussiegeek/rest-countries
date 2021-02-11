@@ -4034,7 +4034,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript@npm:1.20.2, @graphql-codegen/typescript@npm:^1.20.1":
+"@graphql-codegen/typescript@npm:1.21.0":
+  version: 1.21.0
+  resolution: "@graphql-codegen/typescript@npm:1.21.0"
+  dependencies:
+    "@graphql-codegen/plugin-helpers": ^1.18.2
+    "@graphql-codegen/visitor-plugin-common": ^1.18.3
+    auto-bind: ~4.0.0
+    tslib: ~2.1.0
+  peerDependencies:
+    graphql: ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+  checksum: 9fb51ac2e983f5b31e755adcb58fda51a833eb2d94543f21e1fc418020469958f9ae6f2c3a4e5d4f9ee022c71f9a77325e6078e2aa6e2d73de2f582e29939300
+  languageName: node
+  linkType: hard
+
+"@graphql-codegen/typescript@npm:^1.20.1":
   version: 1.20.2
   resolution: "@graphql-codegen/typescript@npm:1.20.2"
   dependencies:
@@ -4085,6 +4099,26 @@ __metadata:
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
   checksum: 48cd3d761e8164a7e66fc88ccdd061585d31e79606d3103fe0dc00d4f3313d0cfe02aa231a1065b400ea974af0ad173c081759c08a900c399e1015690f2eb281
+  languageName: node
+  linkType: hard
+
+"@graphql-codegen/visitor-plugin-common@npm:^1.18.3":
+  version: 1.18.3
+  resolution: "@graphql-codegen/visitor-plugin-common@npm:1.18.3"
+  dependencies:
+    "@graphql-codegen/plugin-helpers": ^1.18.2
+    "@graphql-tools/optimize": ^1.0.1
+    "@graphql-tools/relay-operation-optimizer": ^6
+    array.prototype.flatmap: ^1.2.4
+    auto-bind: ~4.0.0
+    dependency-graph: ^0.10.0
+    graphql-tag: ^2.11.0
+    parse-filepath: ^1.0.2
+    pascal-case: ^3.1.1
+    tslib: ~2.1.0
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+  checksum: 397473180a59b1afd9162dd2a33f37e0d5b51e5eff2a7df85f3cc085f19eb657000519616556923bed2b7857087393f5f1a303dfb4a278ec9f3a10b23f3a5546
   languageName: node
   linkType: hard
 
@@ -23922,7 +23956,7 @@ resolve@^1.19.0:
     "@graphql-codegen/cli": 1.20.1
     "@graphql-codegen/introspection": 1.18.1
     "@graphql-codegen/schema-ast": 1.18.1
-    "@graphql-codegen/typescript": 1.20.2
+    "@graphql-codegen/typescript": 1.21.0
     "@graphql-codegen/typescript-operations": 1.17.14
     "@graphql-codegen/typescript-react-apollo": 2.2.1
     "@graphql-tools/mock": 7.0.0
