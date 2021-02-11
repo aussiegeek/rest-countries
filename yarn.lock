@@ -3405,7 +3405,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.5":
+"@babel/runtime@npm:^7.12.13":
+  version: 7.12.13
+  resolution: "@babel/runtime@npm:7.12.13"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 52e8ac97f5686fc0718592542b5aab4b231e52b89f432d81c5d7a03d43891b187c7cc3cf2ccc7b99a967c9d7c33afe3815dc04db6185017cb3933b6c8b1f535a
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.12.5":
   version: 7.12.5
   resolution: "@babel/runtime@npm:7.12.5"
   dependencies:
@@ -10530,13 +10539,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:5.6.1":
-  version: 5.6.1
-  resolution: "chromatic@npm:5.6.1"
+"chromatic@npm:5.6.2":
+  version: 5.6.2
+  resolution: "chromatic@npm:5.6.2"
   dependencies:
     "@actions/core": ^1.2.4
     "@actions/github": ^4.0.0
-    "@babel/runtime": ^7.12.1
+    "@babel/runtime": ^7.12.13
     "@chromaui/localtunnel": ^2.0.2
     async-retry: ^1.3.1
     chalk: ^4.0.0
@@ -10547,11 +10556,11 @@ __metadata:
     esm: ^3.2.25
     execa: ^5.0.0
     fake-tag: ^2.0.0
-    fs-extra: ^9.0.0
+    fs-extra: ^9.1.0
     jsonfile: ^6.0.1
     junit-report-builder: 2.1.0
     listr: 0.14.3
-    meow: ^8.0.0
+    meow: ^9.0.0
     node-ask: ^1.0.1
     node-fetch: ^2.6.0
     node-loggly-bulk: ^2.2.4
@@ -10573,7 +10582,7 @@ __metadata:
     chroma: bin/register.js
     chromatic: bin/register.js
     chromatic-cli: bin/register.js
-  checksum: 2d194f05df8dcca7098f8d0baa68e3c4e0cf2d326dce7433c1be9a7e0794844bb62b325601852a131fef02ce37882a47f9b4e0f219f9dd08f42628de469821e0
+  checksum: 6b5164633b7b4e3631affa5fc75b5ca08818d7b8fe7e6cbaa8c924ce8772752097c84e1861f5067047f43e80b1c4b4e57430181fad6825e53e66098b683b0289
   languageName: node
   linkType: hard
 
@@ -14774,6 +14783,18 @@ __metadata:
     jsonfile: ^6.0.1
     universalify: ^1.0.0
   checksum: 518828d6e5c33d71cb075f3c25629f857b4a0d1fca5c3b6c8cdee876fa972e0661003491fc7d49d9e4d1c19aec8af6edf045e849a1110f2f879880975f4f6955
+  languageName: node
+  linkType: hard
+
+"fs-extra@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "fs-extra@npm:9.1.0"
+  dependencies:
+    at-least-node: ^1.0.0
+    graceful-fs: ^4.2.0
+    jsonfile: ^6.0.1
+    universalify: ^2.0.0
+  checksum: e667d8df54113b527bf5830dd9db8f142618db488894b329fe07724c7020dfacf8a372b144a74e683ae44e66f56117adca9cac165950dda7d83537c46c10dc4b
   languageName: node
   linkType: hard
 
@@ -19171,25 +19192,6 @@ fsevents@~2.1.2:
     errno: ^0.1.3
     readable-stream: ^2.0.1
   checksum: deb916f33ca09215d6ad58db30854bbf36aaca86e018dcbbbdb7c6160661e8c0b9acdcc23c9931fc6dcd62f3dd5318a7ecab519e3688f7787d0833e5f48c0d0a
-  languageName: node
-  linkType: hard
-
-"meow@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "meow@npm:8.0.0"
-  dependencies:
-    "@types/minimist": ^1.2.0
-    camelcase-keys: ^6.2.2
-    decamelize-keys: ^1.1.0
-    hard-rejection: ^2.1.0
-    minimist-options: 4.1.0
-    normalize-package-data: ^3.0.0
-    read-pkg-up: ^7.0.1
-    redent: ^3.0.0
-    trim-newlines: ^3.0.0
-    type-fest: ^0.18.0
-    yargs-parser: ^20.2.3
-  checksum: 536b8cdff381d619ba4d2647bd15bde3ebbcb289e0c6a5e618d23e6e6d922f6a2febc722a12dee7c6c426f3f37a9a3e7e7b09bf9c217e2eb178e276f9665697d
   languageName: node
   linkType: hard
 
@@ -23987,7 +23989,7 @@ resolve@^1.19.0:
     babel-loader: 8.1.0
     babel-plugin-macros: 3.0.1
     babel-plugin-styled-components: 1.11.1
-    chromatic: 5.6.1
+    chromatic: 5.6.2
     eslint: 7.19.0
     eslint-config-airbnb-typescript: 12.0.0
     eslint-config-prettier: 6.15.0
@@ -26935,6 +26937,13 @@ typescript@3.9.7:
   version: 1.0.0
   resolution: "universalify@npm:1.0.0"
   checksum: d74303a8d9ff18598804f3e9f261c9376cad55b81a92346f086e59261803ae75bef347044dd6a25549eb3b1490c0dd106dc07154cd7ccad8f037fdae947c125d
+  languageName: node
+  linkType: hard
+
+"universalify@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "universalify@npm:2.0.0"
+  checksum: 36bfbdc97bd4b483596e66ea65e20663f5ab9ec3650157d99b075b7f97afcdefe46bbb23f89171dd75595d398cea3769a5b6d7130f5c66cae2a0f00904780f62
   languageName: node
   linkType: hard
 
