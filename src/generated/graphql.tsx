@@ -1,5 +1,4 @@
-import { gql } from '@apollo/client';
-import * as Apollo from '@apollo/client';
+import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core';
 export type Maybe<T> = T | null;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
 /** All built-in and custom scalars, mapped to their actual values */
@@ -168,93 +167,5 @@ export type HomeQuery = (
 );
 
 
-export const CountryDocument = gql`
-    query Country($cca3: String!) {
-  country(cca3: $cca3) {
-    cca3
-    capitalCities
-    region
-    flagURL
-    name
-    names {
-      common
-      type
-    }
-    subregion
-    tld
-    currencies {
-      name
-    }
-    borders {
-      cca3
-      name
-    }
-    languages {
-      name
-      code
-    }
-  }
-}
-    `;
-
-/**
- * __useCountryQuery__
- *
- * To run a query within a React component, call `useCountryQuery` and pass it any options that fit your needs.
- * When your component renders, `useCountryQuery` returns an object from Apollo Client that contains loading, error, and data properties
- * you can use to render your UI.
- *
- * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
- *
- * @example
- * const { data, loading, error } = useCountryQuery({
- *   variables: {
- *      cca3: // value for 'cca3'
- *   },
- * });
- */
-export function useCountryQuery(baseOptions?: Apollo.QueryHookOptions<CountryQuery, CountryQueryVariables>) {
-        return Apollo.useQuery<CountryQuery, CountryQueryVariables>(CountryDocument, baseOptions);
-      }
-export function useCountryLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<CountryQuery, CountryQueryVariables>) {
-          return Apollo.useLazyQuery<CountryQuery, CountryQueryVariables>(CountryDocument, baseOptions);
-        }
-export type CountryQueryHookResult = ReturnType<typeof useCountryQuery>;
-export type CountryLazyQueryHookResult = ReturnType<typeof useCountryLazyQuery>;
-export type CountryQueryResult = Apollo.QueryResult<CountryQuery, CountryQueryVariables>;
-export const HomeDocument = gql`
-    query Home {
-  countries {
-    name
-    cca3
-    flagURL
-    region
-    capitalCities
-  }
-}
-    `;
-
-/**
- * __useHomeQuery__
- *
- * To run a query within a React component, call `useHomeQuery` and pass it any options that fit your needs.
- * When your component renders, `useHomeQuery` returns an object from Apollo Client that contains loading, error, and data properties
- * you can use to render your UI.
- *
- * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
- *
- * @example
- * const { data, loading, error } = useHomeQuery({
- *   variables: {
- *   },
- * });
- */
-export function useHomeQuery(baseOptions?: Apollo.QueryHookOptions<HomeQuery, HomeQueryVariables>) {
-        return Apollo.useQuery<HomeQuery, HomeQueryVariables>(HomeDocument, baseOptions);
-      }
-export function useHomeLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<HomeQuery, HomeQueryVariables>) {
-          return Apollo.useLazyQuery<HomeQuery, HomeQueryVariables>(HomeDocument, baseOptions);
-        }
-export type HomeQueryHookResult = ReturnType<typeof useHomeQuery>;
-export type HomeLazyQueryHookResult = ReturnType<typeof useHomeLazyQuery>;
-export type HomeQueryResult = Apollo.QueryResult<HomeQuery, HomeQueryVariables>;
+export const CountryDocument: DocumentNode<CountryQuery, CountryQueryVariables> = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"Country"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"cca3"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"country"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"cca3"},"value":{"kind":"Variable","name":{"kind":"Name","value":"cca3"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"cca3"}},{"kind":"Field","name":{"kind":"Name","value":"capitalCities"}},{"kind":"Field","name":{"kind":"Name","value":"region"}},{"kind":"Field","name":{"kind":"Name","value":"flagURL"}},{"kind":"Field","name":{"kind":"Name","value":"name"}},{"kind":"Field","name":{"kind":"Name","value":"names"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"common"}},{"kind":"Field","name":{"kind":"Name","value":"type"}}]}},{"kind":"Field","name":{"kind":"Name","value":"subregion"}},{"kind":"Field","name":{"kind":"Name","value":"tld"}},{"kind":"Field","name":{"kind":"Name","value":"currencies"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"name"}}]}},{"kind":"Field","name":{"kind":"Name","value":"borders"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"cca3"}},{"kind":"Field","name":{"kind":"Name","value":"name"}}]}},{"kind":"Field","name":{"kind":"Name","value":"languages"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"name"}},{"kind":"Field","name":{"kind":"Name","value":"code"}}]}}]}}]}}]};
+export const HomeDocument: DocumentNode<HomeQuery, HomeQueryVariables> = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"Home"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"countries"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"name"}},{"kind":"Field","name":{"kind":"Name","value":"cca3"}},{"kind":"Field","name":{"kind":"Name","value":"flagURL"}},{"kind":"Field","name":{"kind":"Name","value":"region"}},{"kind":"Field","name":{"kind":"Name","value":"capitalCities"}}]}}]}}]};

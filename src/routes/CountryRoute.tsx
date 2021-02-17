@@ -1,10 +1,11 @@
 import React from "react";
 import { RouteComponentProps } from "@reach/router";
 import styled from "styled-components/macro";
+import { useQuery } from "@apollo/client";
 
 import CountryDetail from "../components/CountryDetail";
 import { ButtonLink } from "../components/Link";
-import { useCountryQuery } from "../generated/graphql";
+import { CountryDocument } from "../generated/graphql";
 
 const CountryContainer = styled.div``;
 interface CountryProps extends RouteComponentProps {
@@ -21,7 +22,9 @@ const BackButton = styled(ButtonLink)`
 
 const CountryRoute: React.FC<CountryProps> = ({ cca3 }) => {
   const variables = typeof cca3 === "string" ? { cca3 } : undefined;
-  const { data, loading, error } = useCountryQuery({ variables });
+  const { data, loading, error } = useQuery(CountryDocument, {
+    variables,
+  });
   if (loading) {
     return <span>Loading...</span>;
   }

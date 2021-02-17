@@ -1,10 +1,11 @@
 import React from "react";
 import { RouteComponentProps } from "@reach/router";
+import { useQuery } from "@apollo/client";
 import CountryList from "../CountryList";
-import { useHomeQuery } from "../generated/graphql";
+import { HomeDocument } from "../generated/graphql";
 
 const HomeRoute: React.FC<RouteComponentProps> = () => {
-  const result = useHomeQuery();
+  const result = useQuery(HomeDocument);
   const { data, loading, error } = result;
 
   if (loading) {
