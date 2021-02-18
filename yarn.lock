@@ -6746,12 +6746,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-test-renderer@npm:16.9.3":
-  version: 16.9.3
-  resolution: "@types/react-test-renderer@npm:16.9.3"
+"@types/react-test-renderer@npm:16.9.5":
+  version: 16.9.5
+  resolution: "@types/react-test-renderer@npm:16.9.5"
   dependencies:
-    "@types/react": "*"
-  checksum: 43465f5866e2636170ce8baa519aaccc3fee65bb6a312ce7099a29f88b65d10b0b2db0062e81c9aa26f6cfe17ed879a6963ef84442e57496f588c995b5c713aa
+    "@types/react": ^16
+  checksum: ee49f49af1e73fe32034063ef14dd23c73702987451ac7a6919313f163241203b9ef415471b7a277e852de83ef74cbc6852d3bcedc8aeae50905b1779730d4c0
   languageName: node
   linkType: hard
 
@@ -6765,7 +6765,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:16.9.55":
+"@types/react@npm:16.9.55, @types/react@npm:^16":
   version: 16.9.55
   resolution: "@types/react@npm:16.9.55"
   dependencies:
@@ -23682,7 +23682,7 @@ fsevents@~2.1.2:
     "@types/reach__router": 1.3.6
     "@types/react": 16.9.55
     "@types/react-dom": 16.9.9
-    "@types/react-test-renderer": 16.9.3
+    "@types/react-test-renderer": 16.9.5
     "@types/styled-components": 5.1.4
     "@typescript-eslint/eslint-plugin": 4.6.0
     "@typescript-eslint/parser": 4.6.0
