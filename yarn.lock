@@ -6131,7 +6131,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pmmmwh/react-refresh-webpack-plugin@npm:^0.4.2":
+"@pmmmwh/react-refresh-webpack-plugin@npm:^0.4.2, @pmmmwh/react-refresh-webpack-plugin@npm:^0.4.3":
   version: 0.4.3
   resolution: "@pmmmwh/react-refresh-webpack-plugin@npm:0.4.3"
   dependencies:
@@ -6663,10 +6663,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/preset-create-react-app@npm:3.1.6":
-  version: 3.1.6
-  resolution: "@storybook/preset-create-react-app@npm:3.1.6"
+"@storybook/preset-create-react-app@npm:3.1.7":
+  version: 3.1.7
+  resolution: "@storybook/preset-create-react-app@npm:3.1.7"
   dependencies:
+    "@pmmmwh/react-refresh-webpack-plugin": ^0.4.3
     "@types/babel__core": ^7.1.7
     "@types/webpack": ^4.41.13
     babel-plugin-react-docgen: ^4.1.0
@@ -6678,7 +6679,7 @@ __metadata:
     "@storybook/node-logger": "*"
     "@storybook/react": ">=5.2"
     react-scripts: ">=3.0.0"
-  checksum: aa2265f053cbc645cfbd076b1c1994afe39da5a8e1ba8de5b977b5cb5fa3e7b6cacbcc81eb12b3892cb0179e6ef2fac8ac194ec10958ca36364f8464ac0c56f7
+  checksum: 92089db7de67b4cb724b5074297e7b38cb9011e77cb5a367bbab1f51a9177d298ac74c357ee743d43da280791ff9978bb7196e26ea66a48de574e8908f2607a0
   languageName: node
   linkType: hard
 
@@ -24726,7 +24727,7 @@ fsevents@~2.1.2:
     "@storybook/addon-links": 6.1.21
     "@storybook/addon-viewport": 6.1.21
     "@storybook/addons": 6.1.21
-    "@storybook/preset-create-react-app": 3.1.6
+    "@storybook/preset-create-react-app": 3.1.7
     "@storybook/react": 6.1.21
     "@testing-library/dom": 7.29.6
     "@testing-library/jest-dom": 5.11.5
