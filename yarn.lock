@@ -4743,12 +4743,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/cli@npm:1.21.2":
-  version: 1.21.2
-  resolution: "@graphql-codegen/cli@npm:1.21.2"
+"@graphql-codegen/cli@npm:1.21.3":
+  version: 1.21.3
+  resolution: "@graphql-codegen/cli@npm:1.21.3"
   dependencies:
     "@graphql-codegen/core": 1.17.9
-    "@graphql-codegen/plugin-helpers": ^1.18.3
+    "@graphql-codegen/plugin-helpers": ^1.18.4
     "@graphql-tools/apollo-engine-loader": ^6
     "@graphql-tools/code-file-loader": ^6
     "@graphql-tools/git-loader": ^6
@@ -4761,7 +4761,7 @@ __metadata:
     "@graphql-tools/utils": ^7.0.0
     ansi-escapes: ^4.3.1
     chalk: ^4.1.0
-    change-case-all: ^1.0.12
+    change-case-all: 1.0.12
     chokidar: ^3.4.3
     common-tags: ^1.8.0
     cosmiconfig: ^7.0.0
@@ -4793,7 +4793,7 @@ __metadata:
     gql-gen: bin.js
     graphql-code-generator: bin.js
     graphql-codegen: bin.js
-  checksum: 78437534021f4260bee0bb03f138286dd87de6a574eb4266bc2e1622cee4d2fc04290d7944129384bec05dd22482760dea8df7e7df89bcb8c3e97d1171764c14
+  checksum: 3cc2540ba41ab995c20c22b652033c1563c2439fabf1b0e45ba8dbc22ef6af23a178d3fbf2e4308a5d132b560f1600c5a0d46243e9095c02645030d6bc99e1bf
   languageName: node
   linkType: hard
 
@@ -4859,6 +4859,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@graphql-codegen/plugin-helpers@npm:^1.18.4":
+  version: 1.18.4
+  resolution: "@graphql-codegen/plugin-helpers@npm:1.18.4"
+  dependencies:
+    "@graphql-tools/utils": ^7.0.0
+    common-tags: 1.8.0
+    import-from: 3.0.0
+    lodash: ~4.17.20
+    tslib: ~2.1.0
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+  checksum: 53878a29eb62d559bf6987e43fa7501971d3baf4ab830453df5edd4e86e3e4e3c8d435663c4c452d70ed68bc2ecd9239bdb46293b206ec71154c53a0e4dc438e
+  languageName: node
+  linkType: hard
+
 "@graphql-codegen/schema-ast@npm:1.18.1":
   version: 1.18.1
   resolution: "@graphql-codegen/schema-ast@npm:1.18.1"
@@ -4872,18 +4887,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typed-document-node@npm:1.18.3":
-  version: 1.18.3
-  resolution: "@graphql-codegen/typed-document-node@npm:1.18.3"
+"@graphql-codegen/typed-document-node@npm:1.18.4":
+  version: 1.18.4
+  resolution: "@graphql-codegen/typed-document-node@npm:1.18.4"
   dependencies:
-    "@graphql-codegen/plugin-helpers": ^1.18.3
-    "@graphql-codegen/visitor-plugin-common": ^1.19.0
+    "@graphql-codegen/plugin-helpers": ^1.18.4
+    "@graphql-codegen/visitor-plugin-common": ^1.19.1
     auto-bind: ~4.0.0
-    change-case-all: ^1.0.12
+    change-case-all: 1.0.12
     tslib: ~2.1.0
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
-  checksum: 23226469c3740d1356c6888edf69f61cf5a7ebbc8bfc4f1e85ee43c08a59f7b1c07f7dc299ef727668a6ae2b37b8da6b11e8df7b2fa138df8f6982fb4492b2e2
+  checksum: 00f388dcccbef232afa69d865cb08c394be80de9ab3ba2c8b2c6fbea6cec9a166bf8511b9b22ac674076b50492c678465414dd6fa0d86efb74b43f6de9b68365
   languageName: node
   linkType: hard
 
@@ -4933,6 +4948,26 @@ __metadata:
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
   checksum: 0c2ac6843c79383bd5e1937ebd44b84fd9ec7d93eec5b5b30670d52ad388d89759bb9c67c8490eb38f890cfea4a8af64826fb8f13ae1df94deae81dfc1441008
+  languageName: node
+  linkType: hard
+
+"@graphql-codegen/visitor-plugin-common@npm:^1.19.1":
+  version: 1.19.1
+  resolution: "@graphql-codegen/visitor-plugin-common@npm:1.19.1"
+  dependencies:
+    "@graphql-codegen/plugin-helpers": ^1.18.4
+    "@graphql-tools/optimize": ^1.0.1
+    "@graphql-tools/relay-operation-optimizer": ^6
+    array.prototype.flatmap: ^1.2.4
+    auto-bind: ~4.0.0
+    change-case-all: 1.0.12
+    dependency-graph: ^0.11.0
+    graphql-tag: ^2.11.0
+    parse-filepath: ^1.0.2
+    tslib: ~2.1.0
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+  checksum: eb7351155d97dbc1c070733f3b5427fe77e97efc619c91cd015d2f6e719c5eb9b9bc31f50f4d784740f3ca7a21e451bc85570d6912c685e9b6efade7442fac4b
   languageName: node
   linkType: hard
 
@@ -11166,7 +11201,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"change-case-all@npm:^1.0.12":
+"change-case-all@npm:1.0.12, change-case-all@npm:^1.0.12":
   version: 1.0.12
   resolution: "change-case-all@npm:1.0.12"
   dependencies:
@@ -24780,10 +24815,10 @@ fsevents@~2.1.2:
   dependencies:
     "@apollo/client": 3.2.5
     "@babel/core": 7.12.3
-    "@graphql-codegen/cli": 1.21.2
+    "@graphql-codegen/cli": 1.21.3
     "@graphql-codegen/introspection": 1.18.1
     "@graphql-codegen/schema-ast": 1.18.1
-    "@graphql-codegen/typed-document-node": 1.18.3
+    "@graphql-codegen/typed-document-node": 1.18.4
     "@graphql-codegen/typescript": 1.21.1
     "@graphql-codegen/typescript-operations": 1.17.15
     "@graphql-tools/mock": 7.0.0
