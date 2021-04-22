@@ -7606,10 +7606,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/faker@npm:5.5.1":
-  version: 5.5.1
-  resolution: "@types/faker@npm:5.5.1"
-  checksum: c939edb04cc0b484e0edc076645e0c2ea4b88cc7aa9f2daa272306eb2b9cf3e6107f796556828932c55e4e1bd424c589dd4ff5795f4572e9940037078530b8c6
+"@types/faker@npm:5.5.3":
+  version: 5.5.3
+  resolution: "@types/faker@npm:5.5.3"
+  checksum: 400a10db2a027bbfa3bd91c4a04fbb2bab4ab98f20a3a60b505db1947f24a8efc9040739bf2380d2635d4db558eb13018dd3025a38f5d8643c0fc058f24b5220
   languageName: node
   linkType: hard
 
@@ -25224,7 +25224,7 @@ resolve@^2.0.0-next.3:
     "@testing-library/jest-dom": 5.12.0
     "@testing-library/react": 11.2.6
     "@testing-library/user-event": 12.8.3
-    "@types/faker": 5.5.1
+    "@types/faker": 5.5.3
     "@types/jest": 26.0.22
     "@types/node": 12.19.3
     "@types/reach__router": 1.3.6
