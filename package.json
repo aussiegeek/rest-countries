@@ -89,7 +89,7 @@
     "@yarnpkg/pnpify": "2.3.3",
     "apollo": "2.31.0",
     "babel-plugin-macros": "2.8.0",
-    "chromatic": "5.8.2",
+    "chromatic": "5.8.3",
     "eslint": "7.26.0",
     "eslint-config-airbnb-typescript": "12.0.0",
     "eslint-config-prettier": "6.15.0",
