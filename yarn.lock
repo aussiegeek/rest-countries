@@ -8398,7 +8398,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/experimental-utils@npm:4.28.4":
+"@typescript-eslint/experimental-utils@npm:4.28.4, @typescript-eslint/experimental-utils@npm:^4.24.0":
   version: 4.28.4
   resolution: "@typescript-eslint/experimental-utils@npm:4.28.4"
   dependencies:
@@ -14865,14 +14865,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:3.10.2":
-  version: 3.10.2
-  resolution: "eslint-plugin-testing-library@npm:3.10.2"
+"eslint-plugin-testing-library@npm:4.10.1":
+  version: 4.10.1
+  resolution: "eslint-plugin-testing-library@npm:4.10.1"
   dependencies:
-    "@typescript-eslint/experimental-utils": ^3.10.1
+    "@typescript-eslint/experimental-utils": ^4.24.0
   peerDependencies:
-    eslint: ^5 || ^6 || ^7
-  checksum: 2a9eb8f44fa91d052b1f344918cd7a4346c8ec5ea99ee0c3b585def7d5e837200c59c2e0aa99d654365891bdd7084211c723d9e592cfb331d315fba8af1fb186
+    eslint: ^7.5.0
+  checksum: 8096be5c41d8df969665150f890584d92229603badb6a5553d1a57855944933726cc7398710c3d124ecf7283a05d8964c918bbd015e524c945e554338c0ceff6
   languageName: node
   linkType: hard
 
@@ -25946,7 +25946,7 @@ resolve@^2.0.0-next.3:
     eslint-plugin-prettier: 3.4.0
     eslint-plugin-promise: 4.2.1
     eslint-plugin-react: 7.24.0
-    eslint-plugin-testing-library: 3.10.2
+    eslint-plugin-testing-library: 4.10.1
     faker: 5.5.3
     graphql: 15.4.0
     husky: 4.3.0
