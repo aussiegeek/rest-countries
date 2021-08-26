@@ -86,7 +86,7 @@
     "@types/react-test-renderer": "16.9.5",
     "@typescript-eslint/eslint-plugin": "4.29.3",
     "@typescript-eslint/parser": "4.29.3",
-    "@yarnpkg/pnpify": "2.3.3",
+    "@yarnpkg/pnpify": "3.0.1",
     "apollo": "2.31.0",
     "babel-plugin-macros": "2.8.0",
     "chromatic": "5.9.2",
