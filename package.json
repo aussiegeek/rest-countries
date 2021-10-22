@@ -82,7 +82,7 @@
     "@testing-library/react": "11.2.7",
     "@testing-library/user-event": "12.8.3",
     "@types/faker": "5.5.9",
-    "@types/jest": "26.0.24",
+    "@types/jest": "27.0.2",
     "@types/react-test-renderer": "16.9.5",
     "@typescript-eslint/eslint-plugin": "4.33.0",
     "@typescript-eslint/parser": "4.33.0",
