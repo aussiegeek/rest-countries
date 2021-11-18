@@ -15083,12 +15083,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest-formatting@npm:2.0.0":
-  version: 2.0.0
-  resolution: "eslint-plugin-jest-formatting@npm:2.0.0"
+"eslint-plugin-jest-formatting@npm:3.1.0":
+  version: 3.1.0
+  resolution: "eslint-plugin-jest-formatting@npm:3.1.0"
   peerDependencies:
     eslint: ">=0.8.0"
-  checksum: 2e7c7bb09cff4648e9cb3ee8ee003d4022a73ffda7e2864cc08993a587f15c56a32078706af94bde0c627e2442ff3db23f4e177724807e47a422759c879e0403
+  checksum: 26aedf15fb3d54581a81b78fd72041bcbb2d88c141a9fcc9856e6de99343e299baaba469eea44943f14e84b21af6c9c38e71b6bf9e9408ff37b188da1d6ddbf2
   languageName: node
   linkType: hard
 
@@ -26377,7 +26377,7 @@ resolve@^2.0.0-next.3:
     eslint-plugin-eslint-comments: 3.2.0
     eslint-plugin-import: 2.25.3
     eslint-plugin-jest: 24.7.0
-    eslint-plugin-jest-formatting: 2.0.0
+    eslint-plugin-jest-formatting: 3.1.0
     eslint-plugin-jsx-a11y: 6.5.1
     eslint-plugin-prettier: 3.4.1
     eslint-plugin-promise: 4.2.1
