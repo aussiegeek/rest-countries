@@ -7814,19 +7814,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^7.28.1":
-  version: 7.30.3
-  resolution: "@testing-library/dom@npm:7.30.3"
+"@testing-library/dom@npm:^8.0.0":
+  version: 8.11.4
+  resolution: "@testing-library/dom@npm:8.11.4"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/runtime": ^7.12.5
     "@types/aria-query": ^4.2.0
-    aria-query: ^4.2.2
+    aria-query: ^5.0.0
     chalk: ^4.1.0
-    dom-accessibility-api: ^0.5.4
+    dom-accessibility-api: ^0.5.9
     lz-string: ^1.4.4
-    pretty-format: ^26.6.2
-  checksum: 3d5ac838646e622ef10a6cdd496591a17f803df9f9acd67c81168b14092cf510b68bfc7bd188a971fe65bc18b1c259bdaac9db9ee01549ff94b1efefd8f640a1
+    pretty-format: ^27.0.2
+  checksum: 4a0e555aaa8a9b88ad039310861fba6385fefff2d5e07edb941f06214d40fcb61c1db346c75b5504dc53931d5b221d05b875719f0a0d2d9c70a073f9f92f4866
   languageName: node
   linkType: hard
 
@@ -7847,16 +7847,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:11.2.7":
-  version: 11.2.7
-  resolution: "@testing-library/react@npm:11.2.7"
+"@testing-library/react@npm:12.1.4":
+  version: 12.1.4
+  resolution: "@testing-library/react@npm:12.1.4"
   dependencies:
     "@babel/runtime": ^7.12.5
-    "@testing-library/dom": ^7.28.1
+    "@testing-library/dom": ^8.0.0
+    "@types/react-dom": "*"
   peerDependencies:
     react: "*"
     react-dom: "*"
-  checksum: 389c9f3e83f59677f5283783788d18f8cd499342a0e5c1f67821c292860afe5f282ff8b5ced795b9c2f7d78132005d8b6b33e1b3e3a9004e240e3569f8e168ef
+  checksum: 89dec0b10caa356496cab24835c7bab6234e6fa49ffcd1e13789e05023bb801133f42d3ea9f323dfb5c136c7e7b98decd1f86cf8f5336dfdb842a39e08a10bb1
   languageName: node
   linkType: hard
 
@@ -8381,7 +8382,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:16.9.9":
+"@types/react-dom@npm:*, @types/react-dom@npm:16.9.9":
   version: 16.9.9
   resolution: "@types/react-dom@npm:16.9.9"
   dependencies:
@@ -9691,6 +9692,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ansi-regex@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "ansi-regex@npm:5.0.1"
+  checksum: c944e1229f022a2071f7477ea425964328c577d2c752083fe564ea0513b6d733c9ec65102f6d4d2b54cba0cb2dc969648b60d567abeff13dc95ecc0b9b97737d
+  languageName: node
+  linkType: hard
+
 "ansi-styles@npm:^2.2.1":
   version: 2.2.1
   resolution: "ansi-styles@npm:2.2.1"
@@ -9714,6 +9722,13 @@ __metadata:
     "@types/color-name": ^1.1.1
     color-convert: ^2.0.1
   checksum: c8c007d5dab7b4fea064c9ea318114e1f6fc714bb382d061ac09e66bc83c8f3ce12bb6354be01598722c14a5d710af280b7614d269354f80d2535946aefa82f4
+  languageName: node
+  linkType: hard
+
+"ansi-styles@npm:^5.0.0":
+  version: 5.2.0
+  resolution: "ansi-styles@npm:5.2.0"
+  checksum: 10b01465c7a49cbfcc055188e3b79b00db6283319bb53c0d20ca9ad114d1477d6f48c1d01a3ed9678f616566ec33f11116926dfaa162fa7be9ee7d5d2c2ea7e1
   languageName: node
   linkType: hard
 
@@ -10100,6 +10115,13 @@ __metadata:
     "@babel/runtime": ^7.10.2
     "@babel/runtime-corejs3": ^7.10.2
   checksum: dc7631b6f9aee453aee3587f1b4e998e2fca89909a7d2587d91694165d161850a8b64c433348efde78297e35473df6d79deb7abea8571f82485dad9b5401c390
+  languageName: node
+  linkType: hard
+
+"aria-query@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "aria-query@npm:5.0.0"
+  checksum: d25020459620570d05d39327e1269da4f213ff1632c0b8be1bfac984c76601dfcfe7acacd94da4c007ea204144fee8728d6d0d4b7d0f527e84cd748bf980bddc
   languageName: node
   linkType: hard
 
@@ -14082,17 +14104,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dom-accessibility-api@npm:^0.5.4":
-  version: 0.5.4
-  resolution: "dom-accessibility-api@npm:0.5.4"
-  checksum: 39351d26a3732312f14411effef698204bf6c79a7d5eb0664441897541243f2cdf2e508aca52684ccf3b10df6708a6c265d1fde323eebcb8363a1093f5927b10
-  languageName: node
-  linkType: hard
-
 "dom-accessibility-api@npm:^0.5.6":
   version: 0.5.6
   resolution: "dom-accessibility-api@npm:0.5.6"
   checksum: b579681083e683291df022bdf094dae2c7e39db0ff28f70ed2c8368eda203fe4c45bcf92f1c623ce4b746cb245f9a5dc9d176f1781d600b9218728d3a1d1580f
+  languageName: node
+  linkType: hard
+
+"dom-accessibility-api@npm:^0.5.9":
+  version: 0.5.13
+  resolution: "dom-accessibility-api@npm:0.5.13"
+  checksum: 0951b578defb457650c6db90bf68893ac76355e4834f7f48870d8e43a259d1ce9c8e40f2ddb7c87681c8da55e4529c1af48decfd4ce9c5759f64015eb3c2d7ba
   languageName: node
   linkType: hard
 
@@ -24691,6 +24713,17 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"pretty-format@npm:^27.0.2":
+  version: 27.5.1
+  resolution: "pretty-format@npm:27.5.1"
+  dependencies:
+    ansi-regex: ^5.0.1
+    ansi-styles: ^5.0.0
+    react-is: ^17.0.1
+  checksum: 7aa494d4f6836e2176cdefb462d369093fd3ce1601386b6d9af3024351b3e1268194474e8ac22b0bd6e5a5c557fec2f1ddbc2e3efc7b6c8a35e232fcadc39a16
+  languageName: node
+  linkType: hard
+
 "pretty-hrtime@npm:^1.0.3":
   version: 1.0.3
   resolution: "pretty-hrtime@npm:1.0.3"
@@ -26353,7 +26386,7 @@ resolve@^2.0.0-next.3:
     "@storybook/react": 6.3.12
     "@testing-library/dom": 7.31.2
     "@testing-library/jest-dom": 5.15.0
-    "@testing-library/react": 11.2.7
+    "@testing-library/react": 12.1.4
     "@testing-library/user-event": 12.8.3
     "@types/faker": 5.5.9
     "@types/jest": 26.0.24
